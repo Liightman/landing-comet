@@ -1,0 +1,220 @@
+@font-face {
+    font-family: NiveauGrotesk;
+    src: url(../fonts/NiveauGrotesk/NiveauGroteskLight.otf);
+}
+
+html, body {
+    height: 100%;
+    /*overflow: hidden;*/
+}
+
+.landing {
+    width: auto;
+    height: auto;
+    float: left;
+}
+
+.landing157px {
+    margin-left: 15rem;
+}
+
+.logo {
+    width: 23rem;
+    height: 6rem;
+    object-fit: contain;
+    margin-top: 1rem;
+}
+
+#we-are-comet {
+    width: 70rem;
+    height: 18rem;
+    font-family: NiveauGrotesk, serif;
+    font-size: 5.5rem;
+    font-weight: bold;
+    line-height: 1.02;
+    text-align: left;
+    color: #000000;
+    margin-top: 5rem;
+    margin-left: 1rem;
+}
+
+.we-are-comet-separator {
+    width: 2em;
+    height: 0.5rem;
+    object-fit: contain;
+    border: solid 2px #ffff52;
+}
+
+#presentation {
+    width: 30em;
+    height: 5rem;
+    font-family: NiveauGrotesk, serif;
+    font-size: 2rem;
+    font-weight: 300;
+    line-height: 1.33;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #000000;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+#callActions {
+    margin-top: 8rem;
+}
+
+#freelancesAction {
+    float: left;
+}
+
+.astronaut {
+    width: 36px;
+    height: 47px;
+    object-fit: contain;
+    margin-left: 9.6rem;
+}
+
+.freelances-text {
+    width: 171px;
+    height: 43px;
+    font-family: NiveauGrotesk, serif;
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #070f17;
+    margin: auto;
+}
+
+.freelances-text .text-style-1 {
+    letter-spacing: normal;
+}
+
+.freelancesActionButton {
+    width: 230.9px;
+    height: 49.7px;
+    background-color: #ffff52;
+    margin-top: 13px;
+    border-radius: 0 !important;
+}
+
+.freelancesActionButton > span {
+    width: 150px;
+    height: 19px;
+    font-family: NiveauGrotesk, serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #141414;
+    text-transform: uppercase;
+}
+
+.leftArrow {
+    width: 14px;
+    height: 11px;
+    object-fit: contain;
+    position: absolute;
+    margin-left: 6px;
+    margin-top: 6px;
+}
+
+#businessAction {
+    float: left;
+    margin-left: 69.8px;
+}
+
+.planet {
+    width: 61px;
+    height: 50px;
+    object-fit: contain;
+    margin-left: 94px;
+}
+
+.business-text {
+    width: 171px;
+    height: 43px;
+    font-family: NiveauGrotesk, serif;
+    font-size: 37px;
+    font-weight: bold;
+    letter-spacing: 0.2px;
+    text-align: center;
+    color: #070f17;
+    margin: auto;
+}
+
+.business-text .text-style-1 {
+    letter-spacing: normal;
+}
+
+.BusinessActionButton {
+    width: 276.2px;
+    height: 49.7px;
+    background-color: #ffc793;
+    margin-top: 11px;
+    border-radius: 0 !important;
+}
+
+.BusinessActionButton > span {
+    width: 150px;
+    height: 19px;
+    font-family: NiveauGrotesk, serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #141414;
+    text-transform: uppercase;
+}
+
+.find-a-freelance {
+    width: 228.5px;
+    height: 19px;
+    font-family: NiveauGrotesk, serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #141414;
+}
+
+#galaxy {
+    background: url(../images/svg/galaxy.svg);
+    width: 61.5rem;
+    height: 29rem;
+    position: absolute;
+    top: 3rem;
+    left: 90rem;
+}
+
+#rocket {
+    background: url('../images/svg/rocket.svg');
+    width: 237px;
+    height: 343px;
+    object-fit: contain;
+    position: absolute;
+    top: 33.3rem;
+    left: 125rem;
+}
+
+#satellite {
+    background: url(../images/svg/satellite.svg);
+    width: 623px;
+    height: 358px;
+    position: absolute;
+    top: 31.7rem;
+    left: 60rem;
+}
+
+.bottom {
+    width: 100%;
+    height: 6rem;
+    background-color: #5896ec;
+    float: left;
+    position: absolute;
+    top: 67.5rem;
+}
+
+@media all and (max-width: 1024px)
+{
+}
