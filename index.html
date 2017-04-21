@@ -14,8 +14,8 @@
     </head>
 
     <body>
-        <div class="landing">
-            <div class="landing157px">
+        <div class="col-xs-1 col-sm-1 col-md-1"></div>
+        <div class="container col-xs-12 col-sm-6 col-lg-6">
                 <img src="assets/images/svg/logo.svg" alt="Comet" class="logo">
                 <div id="we-are-comet">Nous sommes Comet,
                     <br>la meilleure manière
@@ -29,35 +29,39 @@
                 </div>
 
                 <div id="callActions">
-                    <div id="freelancesAction">
-                        <img src="assets/images/svg/astronaut.svg" alt="Freelances" class="astronaut">
-                        <div class="freelances-text">Freelances</div>
-                        <button class="btn freelancesActionButton">
-                            <span>
+                    <div class="col-xs-12 col-sm-5 col-lg-5">
+                        <img src="assets/images/svg/astronaut.svg" alt="Freelances" class="astronaut center">
+                        <div id="freelances-text" class="center col-xs-12 col-sm-12 col-lg-12">Freelances</div>
+                        <button id="freelancesActionButton" class="btn col-xs-12 col-sm-12 col-lg-12 center">
+                            <span class="center">
                                 Rejoindre Comet
                                 <img src="assets/images/left-arrow.png" alt="Rejoindre Comet" class="leftArrow">
                             </span>
                         </button>
                     </div>
-                    <div id="businessAction">
-                        <img src="assets/images/svg/planet.svg" alt="Freelances" class="planet">
-                        <div class="business-text">Entreprises</div>
-                        <button class="btn BusinessActionButton">
-                            <span>
+                    <hr class="hidden-lg col-xs-12 col-md-">
+                    <div class="col-xs-12 col-sm-5 col-lg-5">
+                        <img src="assets/images/svg/planet.svg" alt="Freelances" class="planet center">
+                        <div id="business-text" class="col-xs-12 col-sm-12 col-lg-12 center">Entreprises</div>
+                        <button id="businessActionButton" class="btn col-xs-12 col-sm-12 col-lg-12 center">
+                            <span class="center">
                                 Trouver un freelance
                                 <img src="assets/images/left-arrow.png" alt="Trouver un freelance" class="leftArrow">
                             </span>
                         </button>
                     </div>
                 </div>
-            </div>
         </div>
 
-        <div id="galaxy"></div>
-        <div id="rocket"></div>
-        <div id="satellite"></div>
+        <div class="container visible-lg-block hidden-xs hidden-sm">
+            <div id="galaxy"></div>
+            <div id="rocket"></div>
+            <div id="satellite"></div>
+        </div>
 
-        <div class="bottom"></div>
+        <div class="navbar bottom navbar-fixed-bottom hidden-xs hidden-sm hidden-md"></div>
+
+        <!--<div class="col-xs-12 col-md-12 col-lg-12 bottom"></div>-->
         <script src="assets/js/bootstrap.js" type="text/javascript"></script>
     </body>
 </html>
