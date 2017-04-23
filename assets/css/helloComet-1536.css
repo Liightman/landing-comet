@@ -179,7 +179,7 @@ html, body {
     object-fit: contain;
     position: absolute;
     top: -11.1rem;
-    left: 90%;
+    left: 84%;
 }
 
 #satellite {
@@ -188,7 +188,7 @@ html, body {
     height: 358px;
     position: absolute;
     top: -12.8rem;
-    left: 40rem;
+    left: 34rem;
 }
 
 .bottom {
