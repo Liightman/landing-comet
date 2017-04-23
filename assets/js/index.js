@@ -11,5 +11,17 @@ if (window.screen.availHeight <= 824)
         $('#satellite').css('margin-top', '-16.7%');
         $('#rocket').css('margin-top', '-16.7%');
     }
+}
 
+if (window.screen.availHeight <= 728)
+{
+    if (navigator.userAgent.indexOf("Chrome") !== -1)
+    {
+        $('.bottom').css('display', 'none');
+    }
+
+    if (navigator.userAgent.indexOf("Firefox") !== -1)
+    {
+        $('.bottom').css('display', 'none');
+    }
 }
