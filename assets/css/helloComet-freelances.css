@@ -42,13 +42,15 @@ body {
     background-image: url(../images/freelance-card.png);
     width: 481px;
     height: 281px;
+    left: 150px;
+    top: 25px;
+    position: absolute;
 }
 
-.back.freelance-card {
+.back-freelance-card {
     background-image: url(../images/svg/back-freelance-card.svg);
     width: 301px;
     height: 319px;
-    position: absolute;
 }
 
 .padding {
@@ -60,8 +62,6 @@ body {
 }
 
 .array {
-    width: 551.2px;
-    height: 82.8px;
     background-color: #ffffff;
     border: solid 1.8px #000000;
     border-bottom: none;
@@ -70,7 +70,16 @@ body {
 .disabled-array {
     background-color: transparent;
     border: solid 1.8px #3c3c3c;
-    width: 551.2px;
+}
+
+.array > .img-array {
+    padding: 15px;
+    float: left;
+}
+
+.disabled-array > .img-array {
+    padding: 25px;
+    float: left;
 }
 
 .array > .text {
@@ -83,21 +92,62 @@ body {
 
 .array .title {
     font-weight: bold;
-    padding: 2rem;
+    padding-top: 2rem;
     font-family: NiveauGrotesk, serif;
 }
 
 .disabled-array > .text {
     font-family: NiveauGroteskLight, serif;
-    font-size: 15px;
+    font-size: 16px;
     letter-spacing: 0.6px;
+    color: #a1a1a1;
     font-weight: normal;
 }
 
 .disabled-array > .title {
     font-weight: bold;
-    padding: 2rem;
+    padding-top: 2rem;
     font-family: NiveauGrotesk, serif;
+    text-transform: uppercase;
+    color: #a1a1a1;
+}
+
+#feedback {
+    background-color: #ff9274;
+    padding: inherit;
+}
+
+.feedback > .text > .author {
+    font-family: NiveauGrotesk, serif;
+    font-size: 37px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+    padding: 5px;
+}
+
+.feedback > .text > .info {
+    font-family: NiveauGrotesk, serif;
+    font-size: 17px;
+    font-weight: bold;
+    text-align: left;
+    color: #ffffff;
+}
+
+
+
+.feedback > .text {
+    font-family: NiveauGroteskLight, serif;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.7px;
+    text-align: left;
+    color: #ffffff;
+    padding: 40px;
+}
+
+.astronaut {
+    float: left;
 }
 
 .btn-primary.active,
@@ -452,7 +502,11 @@ section h3.section-subheading {
 
 footer span.copyright,
 footer ul.quicklinks {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif
+    font-family: NiveauGroteskLight, serif;
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: left;
+    color: #000000;
 }
 
 @media (min-width: 498px) and (max-width: 600px) {
@@ -486,18 +540,12 @@ footer ul.quicklinks {
         width: 396px;
         height: 287px;
         float: right;
-        top: 15rem;
-        position: absolute;
-        left: 55rem;
     }
 
     .progress-section {
         background-image: url(../images/svg/progress-section.svg);
         width: 357px;
         height: 301px;
-        top: 15rem;
-        position: absolute;
-        left: 55rem;
     }
 }
 
@@ -660,17 +708,10 @@ footer {
     text-align: center
 }
 
-footer span.copyright {
-    line-height: 40px;
-    text-transform: uppercase;
-    text-transform: none
-}
-
 footer ul.quicklinks {
     margin-bottom: 0;
     line-height: 40px;
     text-transform: uppercase;
-    text-transform: none
 }
 
 ul.social-buttons {
