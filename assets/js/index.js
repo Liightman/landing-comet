@@ -1,5 +1,5 @@
 if (window.screen.availHeight <= 824)
 {
-    $('#satellite').css('top', '-337px');
-    $('#rocket').css('top', '-321px');
+    $('#satellite').css('top', '-291px');
+    $('#rocket').css('top', '-275px');
 }
