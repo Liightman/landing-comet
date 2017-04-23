@@ -56,7 +56,7 @@ html, body {
 }
 
 #callActions {
-    margin-top: 8rem;
+    margin-top: 3%;
 }
 
 #freelancesAction {
@@ -178,7 +178,7 @@ html, body {
     height: 343px;
     object-fit: contain;
     position: absolute;
-    top: -11.1rem;
+    top: -6.6rem;
     left: 84%;
 }
 
@@ -187,7 +187,7 @@ html, body {
     width: 623px;
     height: 358px;
     position: absolute;
-    top: -12.8rem;
+    top: -8.2rem;
     left: 34rem;
 }
 
