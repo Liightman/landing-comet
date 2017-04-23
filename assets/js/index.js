@@ -25,3 +25,7 @@ if (window.screen.availHeight <= 728)
         $('.bottom').css('display', 'none');
     }
 }
+
+$('#freelancesActionButton').click(function () {
+   window.location = 'freelances.html'
+});
