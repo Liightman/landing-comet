@@ -29,3 +29,8 @@ if (window.screen.availHeight <= 728)
 $('#freelancesActionButton').click(function () {
    window.location = 'freelances.html'
 });
+
+$('#businessActionButton').click(function () {
+   window.location = 'entreprises.html'
+});
+
