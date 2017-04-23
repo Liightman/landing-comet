@@ -9,7 +9,7 @@ if (window.screen.availHeight <= 824)
     if (navigator.userAgent.indexOf("Firefox") !== -1)
     {
         $('#satellite').css('margin-top', '-16.7%');
-        $('#rocket').css('margin', '-16.7%');
+        $('#rocket').css('margin-top', '-16.7%');
     }
 
 }
