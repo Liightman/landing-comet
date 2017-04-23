@@ -139,6 +139,7 @@ html, body {
     background-color: #ffc793;
     margin-top: -0.3rem;
     border-radius: 0 !important;
+    z-index: 1;
 }
 
 #businessActionButton > span {
