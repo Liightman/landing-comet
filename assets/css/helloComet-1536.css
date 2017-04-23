@@ -26,7 +26,6 @@ html, body {
 }
 
 #we-are-comet {
-    height: 18rem;
     font-family: NiveauGrotesk, serif;
     font-size: 5.5rem;
     font-weight: bold;
@@ -45,8 +44,6 @@ html, body {
 }
 
 #presentation {
-    width: 30em;
-    height: 5rem;
     font-family: NiveauGrotesk, serif;
     font-size: 2rem;
     font-weight: 300;
@@ -173,7 +170,6 @@ html, body {
     height: 29rem;
     position: absolute;
     top: 3rem;
-    left: 90rem;
 }
 
 #rocket {
@@ -182,8 +178,8 @@ html, body {
     height: 343px;
     object-fit: contain;
     position: absolute;
-    top: 33.3rem;
-    left: 125rem;
+    top: -11.1rem;
+    left: 90%;
 }
 
 #satellite {
@@ -191,8 +187,8 @@ html, body {
     width: 623px;
     height: 358px;
     position: absolute;
-    top: 31.7rem;
-    left: 60rem;
+    top: -12.8rem;
+    left: 40rem;
 }
 
 .bottom {
