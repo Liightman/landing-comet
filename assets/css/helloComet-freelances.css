@@ -134,6 +134,48 @@ body {
     color: #ffffff;
 }
 
+.join-yellow {
+    height: 49.7px;
+    background-color: transparent;
+    border-bottom: 10px solid yellow;
+    margin-top: 4.7rem;
+    border-radius: 0 !important;
+    z-index: 1;
+    width: initial;
+}
+
+.join-green {
+    height: 49.7px;
+    background-color: transparent;
+    border-bottom: 10px solid #8cdfad;
+    margin-top: 4.7rem;
+    border-radius: 0 !important;
+    z-index: 1;
+    width: initial;
+}
+
+.join-red {
+    height: 49.7px;
+    background-color: transparent;
+    border-bottom: 10px solid #ff9274;
+    margin-top: 4.7rem;
+    border-radius: 0 !important;
+    z-index: 1;
+    width: initial;
+}
+
+
+.join > span {
+    width: 150px;
+    height: 19px;
+    font-family: NiveauGroteskBold, serif;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 0.6px;
+    text-align: left;
+    color: #141414;
+    text-transform: uppercase;
+}
 
 
 .feedback > .text {
@@ -498,6 +540,14 @@ section h3.section-subheading {
 .service-heading {
     margin: 15px 0;
     text-transform: none
+}
+
+.navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+    color: #555;
+    background-color: transparent;
+    border-bottom: 5px solid #fed136;
+    border-radius: initial !important;
+    font-weight: bold;
 }
 
 footer span.copyright,
