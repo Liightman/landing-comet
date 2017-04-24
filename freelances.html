@@ -73,8 +73,13 @@
                 </a>
 
             </div>
-            <div class="col-md-12">
-                <img src="assets/images/collaborators.png" alt="Nos clients" class="img-responsive"><br><br>
+            <div id="client-logos">
+                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/logoTFblanc.png"></span>
+                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/engie.png"></span>
+                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/make.png"></span>
+                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/afrostream.png"></span>
+                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/teradata.png"></span>
+                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/publicis-groupe-logo@2x.png"></span>
             </div>
         </div>
     </header>
@@ -83,15 +88,55 @@
     <section id="advantages">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
+                <div class="col-lg-12 col-xs-12 text-center">
                     <h2 class="section-heading advantages-text">Les avantages Comet</h2>
                 </div>
-                <div class="col-lg-7">
+                <div class="col-lg-6 col-xs-12" id=cards>
+                <div class="col-lg-offset-2 col-lg-10">
                     <div class="back-freelance-card">
+                        <div id="card-first" >
+                            <img class="img-responsive card-js" style="border-radius:5px;box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.2);" src="https://s3.eu-west-2.amazonaws.com/skillee-assets/4_free_only/projects/cards/card-tf.png">
+                        </div>
+                        <div id="card-second" style="-webkit-transform: rotate(-357deg);transform: rotate(-357deg);">
+                        <img class="img-responsive card-js" style="border-radius:5px;box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.2);" src="https://s3.eu-west-2.amazonaws.com/skillee-assets/4_free_only/projects/cards/card-engie.png">
+                        </div>
+                        <div id="card-third" style="-webkit-transform: rotate(1deg);transform: rotate(1deg);">
+                            <img class="img-responsive card-js" style="border-radius:5px;box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.2);" src="https://s3.eu-west-2.amazonaws.com/skillee-assets/4_free_only/projects/cards/card-afro.png">
+                        </div>
+                        <div id="card-fourth" style="-webkit-transform: rotate(-1deg);transform: rotate(-1deg);">
+                            <img class="img-responsive card-js" style="border-radius:5px;box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.2);" src="https://s3.eu-west-2.amazonaws.com/skillee-assets/4_free_only/projects/cards/card-make.png">
+                        </div>
+                        <div id="card-fifth" style="-webkit-transform: rotate(-1deg);transform: rotate(-1deg);">
+                            <img class="img-responsive card-js" style="border-radius:5px;box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.2);" src="https://s3.eu-west-2.amazonaws.com/skillee-assets/4_free_only/projects/cards/cardyousign.png">
+                        </div>
+                        <div id="card-sixth" style="-webkit-transform: rotate(3deg);transform: rotate(3deg);">
+                            <img class="img-responsive card-js" style="border-radius:5px;box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0.2);" src="https://s3.eu-west-2.amazonaws.com/skillee-assets/4_free_only/projects/cards/card-publicis.png">
+                        </div>
+
                         <div class="freelance-card"></div>
                     </div>
                 </div>
-                <div class="col-lg-5 text-center">
+                </div>
+                <script type="text/javascript">
+                setInterval(function() {
+                CardRotate()
+                }, 4500);
+                function CardRotate(){
+                    $("#card-first").fadeIn('slow',function(){
+                        $(this).animate({top: '-=15rem'},'slow', function(){
+                            $("#card-second").attr("id","card-first");
+                            $("#card-third").attr("id","card-second");
+                            $("#card-fourth").attr("id","card-third");
+                            $("#card-fifth").attr("id","card-fourth");
+                            $("#card-sixth").attr("id","card-fifth");
+                            $(this).attr("id","card-sixth");
+                        });
+                        $(this).animate({top: '+=15rem'},'slow');
+                        
+                        });
+                    }
+                </script>
+                <div class="col-lg-offset-1 col-lg-5 col-xs-12 text-center">
                     <h2 class="section-heading">Les meilleures missions en un clic</h2>
                     <div class="section-subheading-speech">
                         On ne garde que les meilleurs projets, standard de qualité, critères de sélection. Lorem ipsum target oprim.
@@ -155,7 +200,7 @@
     <section id="community" class="bg-light-gray">
         <div class="container">
             <div class="row padding">
-                <div class="col-md-6 col-xs-12 text-center">
+                <div class="col-md-5 col-xs-12 text-center">
                     <h2 class="section-heading">La Communauté tech / data</h2>
                     <div class="section-subheading-speech forced-margin">
                         Best Freelancers, Entraide, Slack, Unfair, Events.
@@ -168,33 +213,49 @@
                         </span>
                     </button>
                 </div>
-                <div class="col-md-6 col-xs-12 array-section">
-                    <div class="array col-md-12 col-xs-12">
-                        <img src="assets/images/svg/developer-array.svg" class="img-array">
-                        <div class="title">
-                            DÉVELOPPEURS<br>
+                <div class="col-md-6 col-md-offset-1 col-md-6 col-xs-12 array-section">
+
+                    <div class="array">
+                        <div style="display:flex;align-items:center; padding:1rem;">
+                            <div class="image-xs img-array"><img src="assets/images/svg/developer-array.svg"></div>
+                            <div class="space-left-2-md">
+                                <div class="title">DÉVELOPPEURS</div> 
+                                <div class="text">JavaScript, Python, Ruby, PHP... il y en a pour tous!</div> 
+                            </div>
                         </div>
-                        <div class="text">
-                            JavaScript, Python, Ruby, PHP... il y en a pour tous !
+                        <div>
+                            <a target="_blank" href="https://app.skillee.io">
+                                <div class="hidden-md-down" style="padding:1rem">
+                                    <img class="array-arrow" src="assets/images/arrow-blue.png">
+                                </div>
+                            </a>
                         </div>
                     </div>
-                    <div class="array col-md-12 col-xs-12">
-                        <img src="assets/images/svg/data-array.svg" class="img-array">
-                        <div class="title">
-                            DATA ADDICTS<br>
+
+                    <div class="array">
+                        <div style="display:flex;align-items:center; padding:1rem;">
+                            <div class="image-xs img-array"><img class="img-responsive" src="assets/images/svg/data-array.svg"></div>
+                            <div class="space-left-2-md">
+                                <div class="title">DATA ADDICTS</div> 
+                                <div class="text">Chez nous, la taille ne compte pas !</div> 
+                            </div>
                         </div>
-                        <div class="text">
-                           Chez nous, la taille ne compte pas !
+                        <div>
+                            <a target="_blank" href="https://app.skillee.io">
+                                <div class="hidden-md-down" style="padding:1rem">
+                                    <img class="array-arrow" src="assets/images/arrow-blue.png">
+                                </div>
+                            </a>
                         </div>
                     </div>
+
                     <div class="disabled-array col-md-12 col-xs-12">
-                        <img src="assets/images/svg/more-array.svg" class="img-array">
-                        <div class="title">
-                            Autres compétences
-                        </div>
-                        <div class="text">
-                            Dites nous ce que vous faites, nous vous recontractons
-                            rapidement
+                        <div style="display:flex;align-items:center; padding:1rem;">
+                            <div class="image-xs img-array"><img src="assets/images/svg/more-array.svg" class="img-array"></div>
+                            <div class="space-left-2-md">
+                                <div class="title">AUTRES COMPETENCES</div> 
+                                <div class="text">Dites nous ce que vous faites, nous vous recontacterons rapidement</div> 
+                            </div>
                         </div>
                     </div>
 
@@ -203,19 +264,59 @@
         </div>
     </section>
 
-     <!-- feedback Section -->
     <section id="feedback">
-        <div class="row">
-            <div class="col-md-5 col-xs-5" style="padding: initial; margin-left: -3rem;">
-                <img src="assets/images/les-jedis-obi-wan-kenobi-dans-episode-iv-saga-ressemblent-parfois-etrangement-moines-franciscains-1-730-415.png" class="img-responsive">
-            </div>
-            <div class="col-md-7 col-xs-7 feedback">
-                <div class="text">
-                    <img src="assets/images/svg/astronaut-black.svg" class="astronaut center">
-                    <div class="author">François Kobe</div>
-                    <div class="info">En mission chez Renault Digital</div>
-                    Comet, c’est une équipe qui a pris le temps de comprendre et d’écouter les Freelances, qui a conscience qu’une bonne mission c’est mieux qu’une mission a tout prix, et qui tente de tout faire pour nous faciliter la vie. Et en plus ils se payent le luxe d’être sympa. Perso c’est exactement ce que j’attendais !
+        <div class="row carousel slide" id="carousel-example-generic" data-ride="carousel">
+
+            <div class="carousel-inner col-md-11">
+                <div class="item active">
+                    <div class="col-md-5 col-xs-12" style="padding: initial">
+                        <img src="assets/images/les-jedis-obi-wan-kenobi-dans-episode-iv-saga-ressemblent-parfois-etrangement-moines-franciscains-1-730-415.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 col-xs-12 feedback">
+                        <div class="text">
+                            <div class="text-group">
+                                
+                                <img src="assets/images/svg/astronaut-black.svg">
+                                
+                                <div class="text-title">
+                                    <div class="author">François Kobe</div>
+                                    <div class="info">En mission chez Renault Digital</div>
+                                </div>
+                            </div>
+
+                            Comet, c’est une équipe qui a pris le temps de comprendre et d’écouter les Freelances, qui a conscience qu’une bonne mission c’est mieux qu’une mission a tout prix, et qui tente de tout faire pour nous faciliter la vie. Et en plus ils se payent le luxe d’être sympa. Perso c’est exactement ce que j’attendais !
+                            
+                        </div>
+                    </div>
                 </div>
+                <div class="item">
+                    <div class="col-md-5 col-xs-12" style="padding: initial">
+                        <img src="assets/images/les-jedis-obi-wan-kenobi-dans-episode-iv-saga-ressemblent-parfois-etrangement-moines-franciscains-1-730-415.png" class="img-responsive">
+                    </div>
+                    <div class="col-md-7 col-xs-12 feedback">
+                        <div class="text">
+                            <div class="text-group">
+                                
+                                <img src="assets/images/svg/astronaut-black.svg">
+                                
+                                <div class="text-title">
+                                    <div class="author">François truc</div>
+                                    <div class="info">En mission chez Renault Digital</div>
+                                </div>
+                            </div>
+
+                            Comet, c’est une équipe qui a pris le temps de comprendre et d’écouter les Freelances, qui a conscience qu’une bonne mission c’est mieux qu’une mission a tout prix, et qui tente de tout faire pour nous faciliter la vie. Et en plus ils se payent le luxe d’être sympa. Perso c’est exactement ce que j’attendais !
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-1">
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
             </div>
         </div>
     </section>
