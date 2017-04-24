@@ -197,6 +197,11 @@ html, body {
     left: 34rem;
 }
 
+.background {
+    position: absolute;
+    left: 20rem;
+}
+
 .bottom {
     height: 6.1rem;
     background-color: #5896ec;
