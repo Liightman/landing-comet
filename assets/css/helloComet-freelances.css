@@ -38,19 +38,69 @@ body {
     color: #000000;
 }
 
-.freelance-card {
+/*.freelance-card {
     background-image: url(../images/freelance-card.png);
     width: 481px;
     height: 281px;
     left: 150px;
     top: 25px;
     position: absolute;
+}*/
+#client-logos{
+    display:flex; justify-content:space-around;margin-top:0rem;margin-bottom: 5rem;
 }
+#client-logos span{
+  display:flex; align-items:center;
+}
+#client-logos span img{
+  max-width:15rem
+}
+@media screen and (max-width: 768px) {
+    #client-logos{
+    flex-flow: row wrap;margin-top:3rem !important
+    }
+    #client-logos span{
+    flex-basis: 33% !important;
+    margin:1rem 0rem !important
+    }
+    #client-logos span img{
+    max-width:80px  !important;
+    }
+}
+.back-freelance-card{
+    padding-top:1.5rem;
+}
+#cards{
+    background: url(../images/freelance-back.png) no-repeat left; 
+    -webkit-background-size: contain; /* pour anciens Chrome et Safari */
+    background-size: contain;
+    height:28rem;
+}
+#card-first{
+    position:absolute;
+    z-index:99
+}
+#card-second{
 
-.back-freelance-card {
-    background-image: url(../images/svg/back-freelance-card.svg);
-    width: 301px;
-    height: 319px;
+    position:absolute;
+    
+    z-index:89;
+}
+#card-third{
+    position:absolute;
+    z-index:79;
+}
+#card-fourth{
+    position:absolute;
+    z-index:69;
+}
+#card-fifth{
+    position:absolute;
+    z-index:59;
+}
+#card-sixth{
+    position:absolute;
+    z-index:49;
 }
 
 .padding {
@@ -65,24 +115,34 @@ body {
     background-color: #ffffff;
     border: solid 1.8px #000000;
     border-bottom: none;
+    display:flex; justify-content:space-between; align-items:center;
+    padding: 1rem;
+}
+.flex-array{
+    display: flex;
+    justify-content: space-around;
+    padding: 1rem 0rem;
+    vertical-align: middle
 }
 
+.space-left-2-md{
+    margin-left:2rem
+}
 .disabled-array {
     background-color: transparent;
     border: solid 1.8px #3c3c3c;
+    display:flex; justify-content:space-between; align-items:center;
+    padding: 1rem;
 }
 
-.array > .img-array {
-    padding: 15px;
-    float: left;
+.img-array {
+    width:5rem;
+}
+.hidden-md-down .array-arrow{
+    height: 1.7rem;
 }
 
-.disabled-array > .img-array {
-    padding: 25px;
-    float: left;
-}
-
-.array > .text {
+.space-left-2-md > .text {
     font-family: NiveauGroteskLight, serif;
     font-size: 16px;
     letter-spacing: 0.6px;
@@ -90,9 +150,9 @@ body {
     font-weight: normal;
 }
 
-.array .title {
+.space-left-2-md .title {
     font-weight: bold;
-    padding-top: 2rem;
+    padding-bottom: 0.5rem;
     font-family: NiveauGrotesk, serif;
 }
 
@@ -119,18 +179,18 @@ body {
 
 .feedback {
     background-color: #ff9274;
+    padding-top: 5rem;
 }
 
-.feedback > .text > .author {
+.feedback > .text .author {
     font-family: NiveauGrotesk, serif;
     font-size: 37px;
     font-weight: bold;
     text-align: left;
     color: #ffffff;
-    padding: 5px;
 }
 
-.feedback > .text > .info {
+.feedback > .text .info {
     font-family: NiveauGrotesk, serif;
     font-size: 17px;
     font-weight: bold;
@@ -187,15 +247,18 @@ body {
     font-size: 18px;
     line-height: 1.33;
     letter-spacing: 0.7px;
-    text-align: left;
+    text-align: justify;
     color: #ffffff;
     padding: 40px;
 }
-
-.astronaut {
-    float: left;
+.text-title{
+    margin-left:2rem;
 }
-
+.text-group{
+    margin-bottom: 3rem;
+    display: flex;
+    vertical-align: middle;
+}
 .btn-primary.active,
 .btn-primary:active,
 .btn-xl.active,
@@ -520,11 +583,13 @@ section h2.section-heading {
     text-align: left;
 }
 
+
 .advantages-text {
     font-family: NiveauGroteskBold, serif;
     font-size: 43px;
     font-weight: bold;
     color: #5896eb;
+    padding-bottom:3rem;
 }
 
 section h3.section-subheading {
@@ -538,6 +603,9 @@ section h3.section-subheading {
 @media (min-width: 768px) {
     section {
         padding: 50px 0
+    }
+    section#advantages{
+        padding: 4rem 0rem 4rem !important;
     }
 }
 
