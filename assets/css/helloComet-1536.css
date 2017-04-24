@@ -8,8 +8,6 @@
     src: url(../fonts/NiveauGrotesk/NiveauGroteskBold.otf);
 }
 
-
-
 html, body {
     height: 100%;
     /*overflow: hidden;*/
@@ -33,7 +31,7 @@ html, body {
 }
 
 #we-are-comet {
-    font-family: NiveauGrotesk, serif;
+    font-family: NiveauGroteskBold, serif;
     font-size: 5.5rem;
     font-weight: bold;
     line-height: 1.02;
@@ -204,6 +202,5 @@ html, body {
     background-color: #5896ec;
 }
 
-@media all and (max-width: 1024px)
-{
+@media all and (max-width: 1024px) {
 }
