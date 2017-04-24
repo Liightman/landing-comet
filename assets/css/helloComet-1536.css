@@ -3,6 +3,13 @@
     src: url(../fonts/NiveauGrotesk/NiveauGroteskLight.otf);
 }
 
+@font-face {
+    font-family: NiveauGroteskBold;
+    src: url(../fonts/NiveauGrotesk/NiveauGroteskBold.otf);
+}
+
+
+
 html, body {
     height: 100%;
     /*overflow: hidden;*/
@@ -89,7 +96,7 @@ html, body {
 #freelancesActionButton > span {
     width: 150px;
     height: 19px;
-    font-family: NiveauGrotesk, serif;
+    font-family: NiveauGroteskBold, serif;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.6px;
@@ -145,7 +152,7 @@ html, body {
 #businessActionButton > span {
     width: 150px;
     height: 19px;
-    font-family: NiveauGrotesk, serif;
+    font-family: NiveauGroteskBold, serif;
     font-size: 16px;
     font-weight: bold;
     letter-spacing: 0.6px;
@@ -179,7 +186,7 @@ html, body {
     height: 343px;
     object-fit: contain;
     position: absolute;
-    top: -6.6rem;
+    top: -9.6rem;
     left: 84%;
 }
 
@@ -188,7 +195,7 @@ html, body {
     width: 623px;
     height: 358px;
     position: absolute;
-    top: -8.2rem;
+    top: -11.2rem;
     left: 34rem;
 }
 
