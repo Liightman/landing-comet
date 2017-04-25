@@ -178,7 +178,14 @@ body {
     text-transform: uppercase;
     color: #a1a1a1;
 }
-
+.text-title{
+    margin-left:2rem;
+}
+.text-group{
+    margin-bottom: 3rem;
+    display: flex;
+    vertical-align: middle;
+}
 #feedback {
     background-color: #ff9274;
     padding: inherit;
@@ -204,7 +211,15 @@ body {
     text-align: left;
     color: #ffffff;
 }
-
+.feedback > .text {
+    font-family: NiveauGroteskLight, serif;
+    font-size: 18px;
+    line-height: 1.33;
+    letter-spacing: 0.7px;
+    text-align: justify;
+    color: #ffffff;
+    padding: 40px;
+}
 .join-yellow {
     height: 49.7px;
     background-color: transparent;
@@ -249,23 +264,8 @@ body {
 }
 
 
-.feedback > .text {
-    font-family: NiveauGroteskLight, serif;
-    font-size: 18px;
-    line-height: 1.33;
-    letter-spacing: 0.7px;
-    text-align: justify;
-    color: #ffffff;
-    padding: 40px;
-}
-.text-title{
-    margin-left:2rem;
-}
-.text-group{
-    margin-bottom: 3rem;
-    display: flex;
-    vertical-align: middle;
-}
+
+
 .btn-primary.active,
 .btn-primary:active,
 .btn-xl.active,
@@ -564,7 +564,7 @@ header .intro-text .intro-heading-speech {
 @media (min-width: 768px) {
     header .intro-text {
         padding-top: 150px;
-        padding-bottom: 200px
+        padding-bottom: 17rem;
     }
 
     header .intro-text .intro-heading {

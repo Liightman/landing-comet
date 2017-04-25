@@ -418,11 +418,15 @@ fieldset[disabled] .btn-xl:hover {
 header {
     text-align: center;
     color: #000;
-    background-image: url(../images/svg/background-about.svg)
+    background-image: url(../images/svg/moonwalk_Hihi.svg),url(../images/svg/background-about.svg);
+    background-repeat:  no-repeat,repeat;
+    background-position:  90% bottom,top;
 }
 
 header .intro-text {
     padding-top: 100px;
+    padding-bottom: 26rem;
+
 }
 
 header .intro-text .intro-heading {

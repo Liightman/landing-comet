@@ -1,4 +1,4 @@
-if (window.outerHeight <= 824)
+if (window.screen.availHeight <= 824)
 {
     if (navigator.userAgent.indexOf("Chrome")!== -1 || navigator.userAgent.indexOf("Safari")!== -1)
     {   
