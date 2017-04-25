@@ -91,10 +91,10 @@ Main components
   left: 0;
   width: 40px;
   height: 40px;
-  border-radius: 50%;
 }
 .cd-timeline-img.img-first{
     background-image: url(./../../assets/images/svg/planets/planet-1.svg);
+
 }
 .cd-timeline-img.img-second{
 	background-image: url(./../../assets/images/svg/planets/planet-2.svg);
@@ -104,10 +104,16 @@ Main components
 }
 .cd-timeline-img.img-fourth{
 	background-image: url(./../../assets/images/svg/planets/planet-4.svg);
+	 background-size: contain;
+}
+.cd-timeline-img.img-fifth{
+	background-image: url(./../../assets/images/group-12@3x.png);
+	 background-size: contain;
 }
 .planet-format{
 	background-repeat: no-repeat;
     background-position: center;
+   
 }
 
 .cd-timeline-img img {
