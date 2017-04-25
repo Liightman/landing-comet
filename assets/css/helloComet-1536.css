@@ -108,15 +108,17 @@ html, body {
     height: 11px;
     object-fit: contain;
     position: absolute;
-    margin-left: 6px;
-    margin-top: 6px;
+    margin-left: 10px;
+    margin-top: 5px;
 }
 
 .center {
     display: table;
     margin: 0 auto;
 }
-
+.destination{
+    padding:1rem 0rem;
+}
 #businessAction {
     float: left;
     margin-left: 69.8px;
