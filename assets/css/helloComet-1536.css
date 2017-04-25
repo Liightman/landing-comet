@@ -204,7 +204,7 @@ html, body {
 
 .bottom {
     height: 6.1rem;
-    background-color: #5896ec;
+    /*background-color: #5896ec;*/
 }
 
 @media all and (max-width: 1024px) {
