@@ -420,6 +420,13 @@ fieldset[disabled] .btn-xl:hover {
     }
 }
 
+.indicators {
+    left: 95%;
+    transform: rotate(90deg);
+    bottom: 21rem;
+    position: absolute;
+}
+
 header {
     text-align: center;
     color: #000;

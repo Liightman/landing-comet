@@ -111,6 +111,13 @@ body {
     margin-top: 8rem !important;
 }
 
+.indicators {
+    left: 95%;
+    transform: rotate(90deg);
+    bottom: 21rem;
+    position: absolute;
+}
+
 .array {
     background-color: #ffffff;
     border: solid 1.8px #000000;
