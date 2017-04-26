@@ -1,6 +1,27 @@
+
+@media screen and (device-aspect-ratio: 40/71) {
+	.clicks {
+    	font-size:1.2rem;
+	    
+	}
+	.logo{
+		width: 15rem !important;
+	}
+	#mention{
+		bottom: -3rem !important;
+	}
+}
+
+
 @media screen and (max-width: 768px) {
-  	#background-landing{
-    	background-image: none !important;
+  	
+	#background-landing{
+    	background-image: url(../../assets/images/svg/galaxy.svg), url(../../assets/images/svg/background.svg)!important;
+		background-position: 103% -12%, bottom;
+	}
+	.clicks {
+    	right: 2rem !important;
+	    
 	}
 	.first-container{
 		margin-top: 1.5rem !important;

@@ -416,7 +416,10 @@ fieldset[disabled] .btn-xl:hover {
 }
 @media screen and (max-width: 768px){
     header{
-    background-image: url(../images/svg/background-about.svg) !important;
+    background-image: url(../images/svg/background-about.svg), url(../images/svg/moonwalk_Hihi.svg) !important;
+    background-repeat: repeat, no-repeat !important;
+    background-size: cover,contain !important;
+    background-position: bottom !important;
     }
     .navbar{
         margin-bottom: 0rem !important;
@@ -433,7 +436,7 @@ fieldset[disabled] .btn-xl:hover {
         margin: 0;
     }
     .intro-text{
-        padding-top: 3rem !important;
+        padding-top: 1rem !important;
         padding-bottom: 5rem !important;
     }
     .intro-heading{
@@ -445,9 +448,10 @@ fieldset[disabled] .btn-xl:hover {
     .intro-heading-speech{
         margin-top: 0rem !important;
         margin-left: 0rem !important;
+        margin-bottom: 3rem !important;
         font-size: 1.5rem !important;
         padding-top: 1rem !important;
-        padding-bottom: 1rem !important;
+        padding-bottom: 3rem !important;
         padding-left: 0rem !important;
         padding-right: 0rem !important
     }
@@ -466,6 +470,9 @@ fieldset[disabled] .btn-xl:hover {
     p {
        font-size: 90% !important;
 
+    }
+    #salut{
+        padding: 3rem 0rem !important;
     }
     
     .feedback{

@@ -15,15 +15,21 @@ html, body {
 #background-landing{
     background-image: url(../../assets/images/svg/satellite.svg),url(../../assets/images/svg/rocket.svg),url(../../assets/images/svg/galaxy.svg), url(../../assets/images/svg/background.svg);
     background-repeat: no-repeat;
-    background-position: 65% bottom, right bottom,90% 2%,center bottom;
+    background-position: 65% 85%, right 85%,90% 2%,center bottom;
 }
-}
+
 .landing {
     width: auto;
     height: auto;
     float: left;
 }
-
+.clicks {
+    position: absolute;right: 3rem;
+    font-family: NiveauGroteskBold, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
 .landing157px {
     margin-left: 15rem;
 }

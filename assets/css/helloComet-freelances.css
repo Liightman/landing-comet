@@ -24,7 +24,9 @@ body {
     top: 15px;
     position: absolute;
 }
-
+.img-profile{
+    max-height: 40rem;
+}
 .landing {
     height: 100%;
     background-color: #5896ec;
@@ -38,14 +40,6 @@ body {
     color: #000000;
 }
 
-/*.freelance-card {
-    background-image: url(../images/freelance-card.png);
-    width: 481px;
-    height: 281px;
-    left: 150px;
-    top: 25px;
-    position: absolute;
-}*/
 #client-logos{
     display:flex; justify-content:space-around;margin-top:0rem;margin-bottom: 5rem;
 }
@@ -480,6 +474,14 @@ fieldset[disabled] .btn-xl:hover {
     color: #fff;
     background-color: #fec503
 }
+@media screen and (device-aspect-ratio: 40/71) {
+    header > #background-header{
+        background: url(../images/svg/galaxy-freelances.svg);
+        background-repeat: no-repeat;
+        background-position: 58% 5% !important;
+    }
+
+}
 
 @media screen and (max-width: 768px){
     .navbar{
@@ -495,6 +497,11 @@ fieldset[disabled] .btn-xl:hover {
     }
     body {
         margin: 0;
+    }
+    header > #background-header{
+        background: url(../images/svg/galaxy-freelances.svg);
+        background-repeat: no-repeat;
+        background-position: 79% -5%;
     }
     .intro-text{
         padding-top: 3rem !important;
@@ -528,8 +535,23 @@ fieldset[disabled] .btn-xl:hover {
     .array-section{
         margin-bottom: 3rem !important;
     }
+    .space-left-2-md .text{
+        font-size: 14px !important;
+    }
     .feedback{
         padding-top: 0rem !important;
+    }
+    .feedback .text{
+        padding: 2rem !important;
+    }
+    .feedback .text .text-group img{
+        width: 3rem !important;
+    }
+    .feedback .text .text-group .text-title .author{
+        font-size: 3rem !important;
+    }
+    .text-group{
+        font-size: 80% important;
     }
     #foot-links{
         margin-bottom: 2rem !important;

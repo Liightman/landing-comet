@@ -1,3 +1,61 @@
+.slottt-machine-recipe__mask {
+    width: 28rem;
+    height: 20rem;
+    overflow: hidden; 
+    position: relative;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-bottom: -20px;
+}
+
+.slottt-machine-recipe__items_container {
+    position: absolute;
+}
+
+.slottt-machine-recipe__item {
+    min-width:  28rem;
+    max-width:  28rem;;
+    min-height: 20rem;
+    max-height: 20rem;
+    margin: 0px;
+    padding: 0px;
+    background-size: contain;
+}
+.second_slot .slottt-machine-recipe__item {
+    transform: scale(1.37);
+}
+
+.tagline {
+  font-weight: normal;
+  font-size: 24px;
+}
+@media screen and (max-width: 768px) {
+    .slottt-machine-recipe__mask {
+        width: 21rem !important;
+        height: 15rem !important;
+
+    
+    }
+    .slottt-machine-recipe__item {
+        min-width: 21rem !important;
+        max-width: 21rem !important;
+        min-height: 15rem !important;
+        max-height: 15rem! important;
+        background-size: contain;
+    }
+    #maching {
+        margin: 4rem 0rem;
+    }
+    #maching img{
+        height: 50px !important;
+        -ms-transform: rotate(90deg); /* IE 9 */
+        -webkit-transform: rotate(90deg); /* Chrome, Safari, Opera */
+        transform: rotate(90deg);
+    }
+}
+
+
 @font-face {
     font-family: NiveauGroteskBold;
     src: url(../fonts/NiveauGrotesk/NiveauGroteskBold.otf);
@@ -71,6 +129,25 @@ body {
     #client-logos span img{
     max-width:80px  !important;
     }
+    #matching-part{
+        flex-direction: column !important;
+        align-items: center !important;
+        -webkit-justify-content: center !important;
+        justify-content: center !important;
+    }
+    #maching{
+        padding: 4rem 0rem;
+    }
+}
+#matching-part{
+    display: flex;
+    justify-content: space-between;
+    padding: 8rem 0rem;
+}
+
+
+
+
 }
 
 .padding {
@@ -433,8 +510,14 @@ fieldset[disabled] .btn-xl:hover {
 
 @media screen and (max-width: 768px){
     #entreprises-header{
-        background: cyan !important;
+        background: #c4e4f7 !important;
     }
+    #entreprises-header .container{
+        background-image: url(../images/svg/galaxy-entreprises.svg);
+        background-repeat: no-repeat;
+        background-position: -13% 4%;
+    }
+
     .navbar{
         margin-bottom: 0rem !important;
     }
@@ -499,9 +582,17 @@ fieldset[disabled] .btn-xl:hover {
        font-size: 90% !important;
 
     }
-    
     .feedback{
         padding-top: 0rem !important;
+    }
+    .feedback .text{
+        padding: 2rem !important;
+    }
+    .feedback .text .text-group img{
+        width: 3rem !important;
+    }
+    .feedback .text .text-group .text-title .author{
+        font-size: 3rem !important;
     }
     #foot-links{
         margin-bottom: 2rem !important;
