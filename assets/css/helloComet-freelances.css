@@ -481,6 +481,68 @@ fieldset[disabled] .btn-xl:hover {
     background-color: #fec503
 }
 
+@media screen and (max-width: 768px){
+    .navbar{
+        margin-bottom: 0rem !important;
+    }
+    .navbar-fixed-top
+    {
+    position: relative;
+    top: auto;
+    }
+    .navbar-collapse {
+        max-height: none;
+    }
+    body {
+        margin: 0;
+    }
+    .intro-text{
+        padding-top: 3rem !important;
+        padding-bottom: 5rem !important;
+    }
+    .intro-heading{
+        font-size: 2.5rem !important;
+        padding: 1.8rem 0rem !important;
+        margin-bottom: 0rem !important;
+        margin-left: 0rem !important;
+    }
+    .intro-heading-speech{
+        margin-top: 0rem !important;
+        margin-left: 0rem !important;
+        font-size: 1.5rem !important;
+        padding-top: 1rem !important;
+        padding-bottom: 1rem !important;
+    }
+    #button-cta{
+        margin: 2rem 0rem !important;
+    }
+    .btn-xl{
+        padding: 1rem 2rem !important;
+        font-size: 1.5rem !important;
+        margin-top: 0rem !important;
+    }
+    #cards{
+        margin-bottom: 2rem !important;
+
+    }
+    .array-section{
+        margin-bottom: 3rem !important;
+    }
+    .feedback{
+        padding-top: 0rem !important;
+    }
+    #foot-links{
+        margin-bottom: 2rem !important;
+    }
+    #foot-links ul{
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    #foot-social {
+        display: flex !important;
+    }
+}
+
 @media (min-width: 768px) {
     .navbar-custom {
         background-color: white;
@@ -668,7 +730,6 @@ footer ul.quicklinks {
         background-image: url(../images/svg/payment-section.svg);
         width: 396px;
         height: 287px;
-        float: right;
     }
 
     .progress-section {
@@ -686,7 +747,7 @@ footer ul.quicklinks {
         top: 5px;
     }
 
-    .galaxy {
+    /*.galaxy {
         background-image: url(../images/svg/galaxy-freelances.svg);
         width: 586px;
         height: 293px;
@@ -694,9 +755,9 @@ footer ul.quicklinks {
         top: 10rem;
         position: absolute;
         left: 45rem;
-    }
+    }*/
 
-    .payment-section {
+    /*.payment-section {
         background-image: url(../images/svg/payment-section.svg);
         width: 396px;
         height: 287px;
@@ -704,9 +765,9 @@ footer ul.quicklinks {
         top: 10rem;
         position: absolute;
         left: 45rem;
-    }
+    }*/
 
-    .progress-section {
+    /*.progress-section {
         background-image: url(../images/svg/progress-section.svg);
         width: 357px;
         height: 301px;
@@ -714,7 +775,7 @@ footer ul.quicklinks {
         top: 10rem;
         position: absolute;
         left: 45rem;
-    }
+    }*/
 
 }
 
@@ -732,13 +793,11 @@ footer ul.quicklinks {
 
     .payment-section {
         background-image: url(../images/svg/payment-section.svg);
-        margin-top: -5rem;
         position: inherit;
     }
 
     .progress-section {
         background-image: url(../images/svg/progress-section.svg);
-        margin-top: -5rem;
         position: inherit;
     }
 }

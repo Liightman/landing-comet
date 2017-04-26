@@ -21,7 +21,7 @@
         <div class="container">
             <div class="navbar-header page-scroll">
                 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                    <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
                 </button>
                 <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/images/svg/logo.svg" alt="Comet" class="logo"></a>
             </div>
@@ -68,13 +68,14 @@
 
     <section style="background-color:#ff9274">
         <div class="container">
-           <div class="col-lg-4 speech">Pour être numéro 1, l’entreprise d’aujourd’hui doit attirer les meilleurs</div>
-           <div class="col-lg-4 speech">De nos jours, la plupart d’entre eux sont indépendants</div>
-           <div class="col-lg-4">
+            <div class="col-lg-4 col-xs-12 pads">
                <div class="thirdSpeech">
                     Notre constat
                </div>
            </div>
+           <div class="col-lg-4 col-xs-12 pads speech">Pour être numéro 1, l’entreprise d’aujourd’hui doit attirer les meilleurs</div>
+           <div class="col-lg-4 col-xs-12 pads speech">De nos jours, la plupart d’entre eux sont indépendants</div>
+           
         </div>
     </section>
 
@@ -253,24 +254,23 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-md-2">
-                    <img src="assets/images/svg/logo.svg" alt="Comet" class="img-responsive">
-                </div>
-
-                <div class="col-md-4 float-right">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-
-                <div class="col-md-4 float-right">
+                <div class="col-md-4 col-md-push-6 col-xs-12" id='foot-links'>
                     <ul class="list-inline quicklinks">
                         <li><a style="color:inherit" href="#">Mention Légale</a></li>
                         <li><a style="color:inherit"  href="#">À Propos</a></li>
                         <li><a style="color:inherit"  href="#">Entreprises</a></li>
                     </ul>
                 </div>
+                <div class="col-md-4 col-md-push-6 col-xs-6">
+                    <ul class="list-inline social-buttons" id="foot-social">
+                        <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-xs-4 col-md-pull-10 col-xs-offset-2">
+                    <img src="assets/images/svg/logo.svg" alt="Comet" class="img-responsive">
+                </div>
+                
             </div>
         </div>
     </footer>

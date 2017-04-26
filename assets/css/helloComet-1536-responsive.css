@@ -1,0 +1,54 @@
+@media screen and (max-width: 768px) {
+  	#background-landing{
+    	background-image: none !important;
+	}
+	.first-container{
+		margin-top: 1.5rem !important;
+	}
+	.col-lg-6{
+		padding: 0 !important;
+	}
+	.col-lg-8{
+		padding: 0 !important;
+	}
+	.col-xs-12{
+		padding-left: 0 !important;
+		padding-right: 0 !important;
+	}
+	#we-are-comet{
+		font-size: 3rem !important;
+	    padding: 1.8rem 0rem !important;
+	    margin-top: 20px;
+    	margin-bottom: 0rem !important;
+   	 	margin-left: 0rem !important;
+	}
+	#presentation{
+		margin-top: 0rem !important;
+    	margin-left: 0rem !important;
+    	font-size: 1.5rem !important;
+  		padding-top: 1rem !important;
+  		padding-bottom: 1rem !important;
+	}
+	hr.hidden-lg{
+		margin-top: 0.5rem !important;
+		margin-bottom: 0.5rem !important
+	}
+	.destination{
+		font-size: 2rem !important;
+	}
+	.center{
+		text-align: left !important;
+	}
+
+}
+@media screen and (min-width: 1600px) {
+  .container {
+        width: 1570px;
+    }
+  .main-left{
+  position:relative !important;
+  }
+  .col-xxl-offset-1 {
+        margin-left: 8.33333333%;
+  }
+}
