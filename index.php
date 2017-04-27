@@ -16,7 +16,7 @@
         <meta property="og:title" content="comet - la nouvelle manière de travailler tech/data" %>
         <meta property="og:description" content="comet connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes." />
         <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_thumbnail.png" />
-        <meta property="og:url" content= "http://www.hellocomet.co"/>
+        <meta property="og:url" content= "https://www.hellocomet.co"/>
         <meta name="google-site-verification" content="tyyUOHqUeawLMCeyfRLjWDuO75EMRT_q1PHaeIS2FJY" />
         <!-- tracking segment -->
         <script type="text/javascript">
@@ -43,7 +43,7 @@
     
 
     <body id="background-landing">
-    <a class="clicks1"  target="_blank" href="https://s3.eu-west-2.amazonaws.com/comet-assets/Comet_Mentions+L%C3%A9gales.pdf" id="mention" style="bottom: 2rem;">MENTIONS LEGALES</a>
+    <a class="clicks1"  target="_blank" href="https://s3.eu-west-2.amazonaws.com/comet-assets/Comet_Mentions+L%C3%A9gales.pdf" id="mention" style="bottom: 2rem;">MENTIONS LÉGALES</a>
     <a class="clicks"  target="_blank" href="https://app.hellocomet.co/" style="top: 3rem" >
     <img src="https://s3.eu-west-2.amazonaws.com/comet-assets/Fichier1.svg" style="height:30px">
     CONNEXION </a>
