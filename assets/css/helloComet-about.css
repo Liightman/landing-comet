@@ -564,9 +564,9 @@ header .intro-text .intro-heading-speech {
 }
 .dp:hover
 {
-    transform:rotate(360deg);
-    -ms-transform:rotate(360deg);
-    -webkit-transform:rotate(360deg);
+    -webkit-transform: scale(1.1, 1.1);
+    transform: scale(1.1, 1.1);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
     /*-webkit-font-smoothing:antialiased;*/
 }
 
