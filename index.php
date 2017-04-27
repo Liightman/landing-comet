@@ -42,7 +42,7 @@
 
     <body id="background-landing">
     <a class="clicks1"  target="_blank" href="https://s3.eu-west-2.amazonaws.com/comet-assets/Comet_Mentions+L%C3%A9gales.pdf" id="mention" style="bottom: 3rem;">MENTIONS LEGALES</a>
-    <a class="clicks"  target="_blank" href="https://app.hellocomet.co/" style="top: 3rem" >ME CONNECTER </a>
+    <a class="clicks"  target="_blank" href="https://app.hellocomet.co/" style="top: 3rem" >CONNEXION </a>
     <div >
         <div class="container first-container" style="margin-top: 3rem;">
             <div class="col-lg-6">
