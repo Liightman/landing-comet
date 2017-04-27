@@ -6,12 +6,15 @@
         <meta name="author" content="Llyam Garcia, Comet Yolo" />
         <meta name="keywords" content="Comet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-
+        <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png" sizes="16x16">
+        <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png" sizes="32x32">
+        <link rel="shortcut icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png">
+        
         <title>comet</title>
         <!-- meta facebook -->
         <meta property="og:title" content="comet - la manière de travailler tech/data" %>
         <meta property="og:description" content="comet connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes." />
-        <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/skillee/thumbnail+FB.png" />
+        <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_post.png" />
         <meta property="og:url" content= "https://www.hellocomet.co"/>
         <!-- tracking segment -->
         <script type="text/javascript">
