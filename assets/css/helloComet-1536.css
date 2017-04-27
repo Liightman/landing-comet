@@ -30,6 +30,14 @@ html, body {
     font-weight: bold;
     color: #000000;
 }
+.clicks1 {
+    position: absolute;
+    right: 10rem;
+    font-family: NiveauGroteskBold, serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #000000;
+}
 .landing157px {
     margin-left: 15rem;
 }
