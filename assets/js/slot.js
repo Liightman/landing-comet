@@ -17,8 +17,8 @@
 var actions = [
   'https://s3.eu-west-2.amazonaws.com/comet-assets/cards_matching_2/CARD_DATA_ENGINEER.png',
   'https://s3.eu-west-2.amazonaws.com/comet-assets/cards_matching_2/CARD_DEVELOPPEUR.png',
-  'https://s3.eu-west-2.amazonaws.com/comet-assets/cards_matching_2/CARD_INTERMEDIATE.png',
   'https://s3.eu-west-2.amazonaws.com/comet-assets/cards_matching_2/CARD_JUNIOR_SOFT.png',
+  'https://s3.eu-west-2.amazonaws.com/comet-assets/cards_matching_2/CARD_INTERMEDIATE.png',
   'https://s3.eu-west-2.amazonaws.com/comet-assets/cards_matching_2/CARD_LEAD_DEV.png',
   'https://s3.eu-west-2.amazonaws.com/comet-assets/cards_matching_2/CARD_SENIOR_DATA.png',
   'https://s3.eu-west-2.amazonaws.com/comet-assets/cards_matching_2/CARD_DATA_ENGINEER.png',
