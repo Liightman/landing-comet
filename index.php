@@ -17,6 +17,7 @@
         <meta property="og:description" content="comet connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes." />
         <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_thumbnail.png" />
         <meta property="og:url" content= "http://www.hellocomet.co"/>
+        <meta name="google-site-verification" content="tyyUOHqUeawLMCeyfRLjWDuO75EMRT_q1PHaeIS2FJY" />
         <!-- tracking segment -->
         <script type="text/javascript">
           !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
@@ -42,13 +43,24 @@
 
     <body id="background-landing">
     <a class="clicks1"  target="_blank" href="https://s3.eu-west-2.amazonaws.com/comet-assets/Comet_Mentions+L%C3%A9gales.pdf" id="mention" style="bottom: 3rem;">MENTIONS LEGALES</a>
-    <a class="clicks"  target="_blank" href="https://app.hellocomet.co/" style="top: 3rem" >CONNEXION </a>
+    <a class="clicks"  target="_blank" href="https://app.hellocomet.co/" style="top: 3rem" >
+    <img src="../landing-comet/assets/images/Fichier1.svg" style="height:30px">
+
+    CONNEXION </a>
+
     <div >
-        <div class="container first-container" style="margin-top: 3rem;">
+        <div class="container first-container" style="margin-top: 2rem;">
             <div class="col-lg-6">
                 <img src="assets/images/svg/logo.svg" alt="Comet" class="logo">
             </div>
+            <div class="col-lg-6">
+                <div style='position: absolute;' class="alert alert-warning alert-dismissible" role="alert">
+                  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                  <strong>Warning!</strong> Better check yourself, you're not looking too good.
+                </div>
+            </div>
         </div>
+
 
         <div class="container" style="padding-bottom: 6rem">
             <h1 id="we-are-comet" class="col-lg-8">Nous sommes comet,
