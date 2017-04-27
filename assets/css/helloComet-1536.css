@@ -47,7 +47,8 @@ html, body {
     float: left;
 }
 .clicks {
-    position: absolute;right: 3rem;
+    position: absolute;
+    right: 10rem;
     font-family: NiveauGroteskBold, serif;
     font-size: 1.5rem;
     font-weight: bold;
