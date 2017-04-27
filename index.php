@@ -8,7 +8,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1" />
 
         <title>comet</title>
-
+        <!-- meta facebook -->
+        <meta property="og:title" content="comet - la manière de travailler tech/data" %>
+        <meta property="og:description" content="comet connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes." />
+        <meta property="og:image" content="https://s3-eu-west-1.amazonaws.com/skillee/thumbnail+FB.png" />
+        <meta property="og:url" content= "https://www.hellocomet.co"/>
+        <!-- tracking segment -->
+        <script type="text/javascript">
+          !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
+          analytics.load("7iOqS9L3PoyGRj04HhCqfZfkR7ofjIFV");
+          analytics.page();
+          }}();
+        </script>
+        <!-- Hotjar Tracking Code for http://www.hellocomet.co -->
+        <script>
+            (function(h,o,t,j,a,r){
+                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+                h._hjSettings={hjid:485099,hjsv:5};
+                a=o.getElementsByTagName('head')[0];
+                r=o.createElement('script');r.async=1;
+                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+                a.appendChild(r);
+            })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
+        </script>
         <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/helloComet-1536.css" rel="stylesheet" type="text/css" />
         <link href="assets/css/helloComet-1536-responsive.css" rel="stylesheet" type="text/css" />
