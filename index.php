@@ -12,6 +12,7 @@
 
         <title>comet</title>
         <!-- meta facebook -->
+        <meta property="og:type" content="website" />
         <meta property="og:title" content="comet - la manière de travailler tech/data" %>
         <meta property="og:description" content="comet connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes." />
         <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_post.png" />
