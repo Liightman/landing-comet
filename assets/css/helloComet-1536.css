@@ -10,10 +10,17 @@
 
 html, body {
     height: 100%;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
+html {
+  height: 100%;
+}
+body {
+  height:100vh; 
+}
+
 .alerty{
-    background: rgba(0, 0, 0, 0.65);
+    background: black;
     border-radius: 0px !important;
     color: white ;
     font-size: 1.8rem;
@@ -24,21 +31,21 @@ html, body {
     letter-spacing: 1px;
 }
 .alerty strong{
-    color : #FF9274;
+    color : #ffff52;
     letter-spacing: 1px;
-    font-family: NiveauGroteskBold;
     padding: 0.4rem 0rem;
-    border-bottom: #FF9274 solid;
-    font-family: NiveauGroteskBold;
+    border-bottom: #ffff52 solid 2px;
+
 }
 .close{
     opacity: 1;
     color: white
 }
 #background-landing{
-    background-image: url(../../assets/images/svg/satellite.svg),url(../../assets/images/svg/rocket.svg),url(../../assets/images/svg/galaxy.svg), url(../../assets/images/svg/background.svg);
+    background-image: url(../../assets/images/svg/satellite.svg),url(../../assets/images/svg/rocket.svg),url(../../assets/images/svg/galaxy.svg), url(../../assets/images/svg/background.svg),linear-gradient(to bottom, #5896ec, #5896ec);
     background-repeat: no-repeat;
-    background-position: 65% 85%, right 85%,90% 2%,center bottom;
+    background-position: 65% 85%, right 86%,90% 2%,center bottom, center 100%;
+    background-size: auto,auto,auto,auto,100% 8%;
 }
 
 .landing {
@@ -64,7 +71,7 @@ html, body {
     font-family: NiveauGroteskBold, serif;
     font-size: 1.5rem;
     font-weight: bold;
-    color: #000000;
+    color: white;
 }
 .landing157px {
     margin-left: 15rem;
