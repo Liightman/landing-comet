@@ -10,7 +10,7 @@
 
 html, body {
     height: 100%;
-    /*overflow: hidden;*/
+    overflow: hidden;
 }
 #background-landing{
     background-image: url(../../assets/images/svg/satellite.svg),url(../../assets/images/svg/rocket.svg),url(../../assets/images/svg/galaxy.svg), url(../../assets/images/svg/background.svg);
