@@ -676,7 +676,7 @@ header .intro-text .intro-heading-speech {
     margin-top: 4rem;
 }
 #entreprises-header{
-    background-image: url(../images/svg/galaxy-entreprises.svg), url(../images/svg/planet-entreprises.svg);
+    background-image: url(../images/svg/galaxy-entreprises.svg), url(../images/svg/planet-entreprises.svg), linear-gradient(rgba(0, 0, 0, 0),rgba(0, 0, 0, 0.2));
     background-repeat: no-repeat;
     background-position: right center, right bottom;
 }
