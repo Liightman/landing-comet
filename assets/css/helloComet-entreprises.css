@@ -55,6 +55,15 @@
     }
 }
 
+.navbar-custom .nav li a, .navbar-custom .navbar-toggle {
+    font-family: NiveauGroteskLight, serif !important;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 1rem;
+}
 
 @font-face {
     font-family: NiveauGroteskBold;
@@ -279,7 +288,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family NiveauGroteskBold, sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -374,11 +383,12 @@ fieldset[disabled] .btn-primary:hover {
     color: #000;
     background-color: #ffc793;
     border-color: #ffc793;
-    font-size: 18px;
+    font-size: 1.6rem;
     padding: 20px 40px;
     border-radius: 0 !important;
     float: left;
     margin-top: 4rem;
+    opacity: 0.8;
 }
 
 .btn-xl.active,
@@ -386,9 +396,14 @@ fieldset[disabled] .btn-primary:hover {
 .btn-xl:focus,
 .btn-xl:hover,
 .open .dropdown-toggle.btn-xl {
-    color: #fff;
-    background-color: #fec503;
-    border-color: #f6bf01
+    opacity: 1;
+}
+.btn-xl .leftArrow{
+    margin-left: 1rem;
+    margin-bottom: 3px;
+}
+.btn-xl:hover .leftArrow{
+    margin-left: 1.5rem
 }
 
 .btn-xl.disabled,
@@ -438,7 +453,6 @@ fieldset[disabled] .btn-xl:hover {
     color: black;
     text-transform: uppercase
 }
-
 .navbar-custom .navbar-collapse {
     border-color: rgba(255, 255, 255, .02)
 }
@@ -640,12 +654,13 @@ header .intro-text .intro-heading {
     font-weight: bold;
     text-align: left;
     color: #000000;
+    text-transform: inherit;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
     background-color: transparent;
-    border-bottom: 5px solid #fed136;
+    border-bottom: 7px solid yellow;
     border-radius: initial !important;
     font-weight: bold;
 }
@@ -678,13 +693,15 @@ header .intro-text .intro-heading-speech {
 
 .howitswork {
     font-family: NiveauGrotesk, serif;
-    font-size: 43px;
+    font-size: 3.7rem;
     font-weight: bold;
     text-align: center;
     color: #000000;
     text-transform: none;
 }
-
+.how-msg{
+    font-size: 1.6rem;
+}
 .howitswork-img {
     padding: 15px;
     height: 10rem
@@ -1114,7 +1131,9 @@ img::-moz-selection {
     margin-left: 40px;
     position: absolute;
 }
-
+h3{
+    font-family: NiveauGroteskBold, serif;
+}
 .comet {
     position: absolute;
     top: -35px;

@@ -19,6 +19,15 @@ body {
     webkit-tap-highlight-color: #fed136;
     line-height: normal !important;
 }
+.navbar-custom .nav li a, .navbar-custom .navbar-toggle {
+    font-family: NiveauGroteskLight, serif !important;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 1rem;
+}
 
 .logo {
     top: 15px;
@@ -277,7 +286,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family NiveauGroteskBold, sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -372,11 +381,12 @@ fieldset[disabled] .btn-primary:hover {
     color: #000;
     background-color: #ffff52;
     border-color: #ffff52;
-    font-size: 18px;
+    font-size: 1.6rem;
     padding: 20px 40px;
     border-radius: 0 !important;
     float: left;
     margin-top: 4rem;
+    opacity: 0.9
 }
 
 .btn-xl.active,
@@ -384,9 +394,14 @@ fieldset[disabled] .btn-primary:hover {
 .btn-xl:focus,
 .btn-xl:hover,
 .open .dropdown-toggle.btn-xl {
-    color: #fff;
-    background-color: #fec503;
-    border-color: #f6bf01
+    opacity: 1
+}
+.btn-xl .leftArrow{
+    margin-left: 0.5rem;
+    margin-bottom: 3px;
+}
+.btn-xl:hover .leftArrow{
+    margin-left: 1rem
 }
 
 .btn-xl.disabled,
@@ -512,6 +527,7 @@ fieldset[disabled] .btn-xl:hover {
         padding: 1.8rem 0rem !important;
         margin-bottom: 0rem !important;
         margin-left: 0rem !important;
+        text-transform: inherit;
     }
     .intro-heading-speech{
         margin-top: 0rem !important;
@@ -657,6 +673,7 @@ header .intro-text .intro-heading-speech {
         font-weight: bold;
         text-align: left;
         color: #000000;
+        text-transform: inherit;
     }
 
 }
@@ -666,7 +683,8 @@ section {
 }
 
 section h2.section-heading {
-    font-size: 40px;
+    font-family: NiveauGroteskBold, serif;
+    font-size: 3.7rem;
     margin-top: 0;
     margin-bottom: 15px;
     float: left;
@@ -708,7 +726,7 @@ section h3.section-subheading {
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
     color: #555;
     background-color: transparent;
-    border-bottom: 5px solid #fed136;
+    border-bottom: 0.7rem solid yellow;
     border-radius: initial !important;
     font-weight: bold;
 }
@@ -930,13 +948,12 @@ ul.social-buttons {
 
 ul.social-buttons li a {
     display: block;
-    background-color: #222;
     height: 40px;
     width: 40px;
     border-radius: 100%;
     font-size: 20px;
     line-height: 40px;
-    color: #fff;
+    color: black;
     outline: 0;
     -webkit-transition: all .3s;
     -moz-transition: all .3s;

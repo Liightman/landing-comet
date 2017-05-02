@@ -19,7 +19,15 @@ body {
     webkit-tap-highlight-color: #fed136;
     line-height: normal !important;
 }
-
+.navbar-custom .nav li a, .navbar-custom .navbar-toggle {
+    font-family: NiveauGroteskLight, serif !important;
+    color: black;
+    text-transform: uppercase;
+}
+.navbar-nav > li > a {
+    padding-top: 15px;
+    padding-bottom: 1rem;
+}
 .logo {
     top: 15px;
     position: absolute;
@@ -186,7 +194,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: Montserrat, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family NiveauGroteskBold, sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
@@ -444,6 +452,7 @@ fieldset[disabled] .btn-xl:hover {
         padding: 1.8rem 0rem !important;
         margin-bottom: 0rem !important;
         margin-left: 0rem !important;
+        text-transform: inherit;
     }
     .intro-heading-speech{
         margin-top: 0rem !important;
@@ -510,6 +519,7 @@ header .intro-text .intro-heading {
     font-weight: bold;
     text-align: left;
     color: #000000;
+     text-transform: inherit;
 }
 
 .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
