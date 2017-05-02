@@ -10,7 +10,7 @@
 
 html, body {
     height: 100%;
-   /* overflow: hidden;*/
+    overflow: hidden;
 }
 html {
   height: 100%;
@@ -143,6 +143,13 @@ body {
     height: 49.7px;
     background-color: #ffff52;
     border-radius: 0 !important;
+    opacity: 0.8
+}
+#freelancesActionButton:hover{
+    opacity: 1
+}
+#freelancesActionButton:hover span img{
+    margin-left: 15px;
 }
 
 #freelancesActionButton > span {
@@ -201,6 +208,13 @@ body {
     margin-top: -0.3rem;
     border-radius: 0 !important;
     z-index: 1;
+    opacity: 0.8
+}
+#businessActionButton:hover {
+    opacity: 1
+}
+#businessActionButton:hover span img{
+    margin-left: 15px;
 }
 
 #businessActionButton > span {
