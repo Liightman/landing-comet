@@ -14,8 +14,15 @@
 
 
 @media screen and (max-width: 768px) {
+	html, body {
+    	height: 100%;
+     	overflow: auto !important;
+    }
   	b{
   		padding:0rem !important;
+  	}
+  	#us{
+  		padding: 0rem !important
   	}
 	#background-landing{
     	background-image: url(../../assets/images/svg/galaxy.svg), url(../../assets/images/svg/background.svg)!important;
