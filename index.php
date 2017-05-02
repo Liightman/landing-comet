@@ -108,7 +108,7 @@
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <div class="container">
                 <div class=col-xs-12>
-                 <span id="us" style="padding-left:2rem">skillee</span> décolle et devient comet. Découvrez pourquoi dans <a href="https://newsroom.hellocomet.co/from-skillee-to-comet-814ca0b98657"> <strong>cet article.</strong></a>
+                 <span id="us" style="padding-left:2rem">skillee</span> décolle et devient comet. Découvrez pourquoi dans <a target="_blank" href="https://newsroom.hellocomet.co/from-skillee-to-comet-814ca0b98657"> <strong>cet article.</strong></a>
                  </div>
               </div>
             </div>
