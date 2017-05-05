@@ -27,7 +27,7 @@ if (window.screen.availHeight <= 728)
     }
 }
 
-$('#freelancesActionButton').click(function () {
+$('#freelances_Landing_Button').click(function () {
    window.location = '/freelances'
 });
 

@@ -78,7 +78,7 @@
                         <img src="assets/images/svg/astronaut.svg" alt="Freelances" class="astronaut center hidden-xs">
                         <div id="freelances-text" class="center destination col-xs-12 col-sm-12 col-lg-12">Freelances</div>
                     </div>
-                    <button id="freelancesActionButton" class="cta-button btn col-xs-12 col-sm-12 col-lg-12 center">
+                    <button id="freelances_Landing_Button" class="cta-button btn col-xs-12 col-sm-12 col-lg-12 center">
                         <span class="center">
                             Rejoindre Comet
                             <img src="assets/images/left-arrow.png" alt="Rejoindre Comet" class="leftArrow">
@@ -134,6 +134,21 @@
                 $(".clicks").css('top', '3rem');
             })
         </script>
-
+        <script type="text/javascript">
+        $( document ).ready(function(){
+         var link_f = $('.cta-button');
+         $.each(link_f, function( index, value ) {
+            if( $(value).attr('id').includes("Freelances") ){ 
+                var libel = 'Freelance_sign_up'}
+                else{
+                var libel = 'Entreprise_sign_up'
+                }
+          analytics.trackLink($(value), 'Click_CTA', {
+                  category: libel,
+                  label: $(value).attr('id'),
+              });
+          });
+        })
+        </script>
     </body>
 </html>

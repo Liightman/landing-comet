@@ -139,16 +139,16 @@ body {
     margin: auto;
 }
 
-#freelancesActionButton {
+#freelances_Landing_Button {
     height: 49.7px;
     background-color: #ffff52;
     border-radius: 0 !important;
     opacity: 0.8
 }
-#freelancesActionButton:hover{
+#freelances_Landing_Button:hover{
     opacity: 1
 }
-#freelancesActionButton:hover span img{
+#freelances_Landing_Button:hover span img{
     margin-left: 15px;
 }
 
@@ -176,7 +176,7 @@ body {
     to {-moz-transform: translate(0, -0px);}    
 }
 
-#freelancesActionButton > span {
+#freelances_Landing_Button > span {
     width: 150px;
     height: 19px;
     font-family: NiveauGroteskBold, serif;
