@@ -139,16 +139,16 @@ body {
     margin: auto;
 }
 
-#freelances_Landing_Button {
+#freelancesActionButton {
     height: 49.7px;
     background-color: #ffff52;
     border-radius: 0 !important;
     opacity: 0.8
 }
-#freelances_Landing_Button:hover{
+#freelancesActionButton:hover{
     opacity: 1
 }
-#freelances_Landing_Button:hover span img{
+#freelancesActionButton:hover span img{
     margin-left: 15px;
 }
 
@@ -176,7 +176,7 @@ body {
     to {-moz-transform: translate(0, -0px);}    
 }
 
-#freelances_Landing_Button > span {
+#freelancesActionButton > span {
     width: 150px;
     height: 19px;
     font-family: NiveauGroteskBold, serif;
@@ -224,7 +224,7 @@ body {
     margin: auto;
 }
 
-#business_Landing_Button {
+#businessActionButton {
     height: 49.7px;
     background-color: #ffc793;
     margin-top: -0.3rem;
@@ -232,14 +232,14 @@ body {
     z-index: 1;
     opacity: 0.8
 }
-#business_Landing_Button:hover {
+#businessActionButton:hover {
     opacity: 1
 }
-#business_Landing_Button:hover span img{
+#businessActionButton:hover span img{
     margin-left: 15px;
 }
 
-#business_Landing_Button > span {
+#businessActionButton > span {
     width: 150px;
     height: 19px;
     font-family: NiveauGroteskBold, serif;
