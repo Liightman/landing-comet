@@ -27,11 +27,11 @@ if (window.screen.availHeight <= 728)
     }
 }
 
-$('#freelances_Landing_Button').click(function () {
+$('#freelancesActionButton').click(function () {
    window.location = '/freelances'
 });
 
-$('#business_Landing_Button').click(function () {
+$('#businessActionButton').click(function () {
    window.location = '/entreprises'
 });
 
