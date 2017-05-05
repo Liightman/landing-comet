@@ -31,7 +31,7 @@ $('#freelances_Landing_Button').click(function () {
    window.location = '/freelances'
 });
 
-$('#businessActionButton').click(function () {
+$('#business_Landing_Button').click(function () {
    window.location = '/entreprises'
 });
 

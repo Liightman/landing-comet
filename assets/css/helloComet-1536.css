@@ -224,7 +224,7 @@ body {
     margin: auto;
 }
 
-#businessActionButton {
+#business_Landing_Button {
     height: 49.7px;
     background-color: #ffc793;
     margin-top: -0.3rem;
@@ -232,14 +232,14 @@ body {
     z-index: 1;
     opacity: 0.8
 }
-#businessActionButton:hover {
+#business_Landing_Button:hover {
     opacity: 1
 }
-#businessActionButton:hover span img{
+#business_Landing_Button:hover span img{
     margin-left: 15px;
 }
 
-#businessActionButton > span {
+#business_Landing_Button > span {
     width: 150px;
     height: 19px;
     font-family: NiveauGroteskBold, serif;
