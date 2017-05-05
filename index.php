@@ -78,7 +78,7 @@
                         <img src="assets/images/svg/astronaut.svg" alt="Freelances" class="astronaut center hidden-xs">
                         <div id="freelances-text" class="center destination col-xs-12 col-sm-12 col-lg-12">Freelances</div>
                     </div>
-                    <button id="freelances_Landing_Button" class="cta-button btn col-xs-12 col-sm-12 col-lg-12 center">
+                    <button id="freelancesActionButton"  name="Freelance_Landing_Button" class="cta-button btn col-xs-12 col-sm-12 col-lg-12 center">
                         <span class="center">
                             Rejoindre Comet
                             <img src="assets/images/left-arrow.png" alt="Rejoindre Comet" class="leftArrow">
@@ -89,8 +89,7 @@
                 <div class="col-xs-12 col-sm-12 col-lg-5">
                     <img src="assets/images/svg/planet.svg" alt="Freelances" class="planet center hidden-xs">
                     <div id="business-text" class="col-xs-12 destination col-sm-12 col-lg-12 center">Entreprises</div>
-                    <button id="business_Landing_Button"
-                    businessActionButton" class="cta-button btn col-xs-12 col-sm-12 col-lg-12 center">
+                    <button id="businessActionButton"  name="Entreprise_Landing_Button" class="cta-button btn col-xs-12 col-sm-12 col-lg-12 center">
                         <span class="center">
                             Trouver un freelance
                             <img src="assets/images/left-arrow.png" alt="Trouver un freelance" class="leftArrow">
@@ -139,14 +138,14 @@
         $( document ).ready(function(){
          var link_f = $('.cta-button');
          $.each(link_f, function( index, value ) {
-            if( $(value).attr('id').includes("freelances") ){ 
+            if( $(value).attr('name').includes("Freelance") ){ 
                 var libel = 'Freelance_sign_up'}
                 else{
                 var libel = 'Entreprise_sign_up'
                 }
           analytics.trackLink($(value), 'Click_CTA', {
                   category: libel,
-                  label: $(value).attr('id').capitalize(),
+                  label: $(value).attr('name'),
               });
           });
         })
