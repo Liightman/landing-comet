@@ -2,7 +2,7 @@
 <html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <meta name="description" content="" />
+        <meta name="description" content="Comet, une solution simple et transparente pour vous faciliter la vie." />
         <meta name="author" content="Llyam Garcia, Comet Yolo" />
         <meta name="keywords" content="Comet" />
         <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -59,7 +59,7 @@
 
 
         <div class="container" style="padding-bottom: 6rem">
-            <h1 id="we-are-comet" class="col-lg-8">Nous sommes comet,
+            <h1 id="we-are-comet" class="col-lg-8">Nous sommes <b><u>comet</u></b>,
                 <br>la nouvelle manière
                 <br>de travailler en tech/data
             </h1>
@@ -69,7 +69,7 @@
             </div>
 
             <div id="presentation" class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
-                comet connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes.
+                <b><u>comet</u></b> connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes.
             </div>
 
             <div id="callActions" class="col-lg-8">
@@ -109,7 +109,7 @@
               <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
               <div class="container">
                 <div class=col-xs-12>
-                 <span id="us" style="padding-left:2rem">skillee</span> décolle et devient comet. Découvrez pourquoi dans <a target="_blank" href="https://newsroom.hellocomet.co/from-skillee-to-comet-814ca0b98657"> <strong>cet article.</strong></a>
+                 <span id="us" style="padding-left:2rem">skillee</span> décolle et devient <b><u>comet</u></b>. Découvrez pourquoi dans <a target="_blank" href="https://newsroom.hellocomet.co/from-skillee-to-comet-814ca0b98657"> <strong>cet article.</strong></a>
                  </div>
               </div>
             </div>
