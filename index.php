@@ -105,7 +105,7 @@
                 src="https://code.jquery.com/jquery-3.2.1.min.js"
                 integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
                 crossorigin="anonymous"></script>
-        <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+        <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
         <script src="assets/js/index.js" type="text/javascript"></script>
         </div>
         <div id="toexport" class="hidden">
