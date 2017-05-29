@@ -22,7 +22,7 @@
             <meta property="og:url" content="https://www.hellocomet.co"/>
             <meta name="google-site-verification" content="tyyUOHqUeawLMCeyfRLjWDuO75EMRT_q1PHaeIS2FJY"/>
             <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="bogus"/>
-            <link href="assets/css/helloComet-1536.css" rel="stylesheet" type="text/css" media="bogus"/>
+            <link href="assets/css/helloComet-1536.min.css" rel="stylesheet" type="text/css" media="bogus"/>
             <link href="assets/css/helloComet-1536-responsive.css" rel="stylesheet" type="text/css" media="bogus"/>
         </head>
 
