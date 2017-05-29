@@ -1,3 +1,10 @@
+var giftofspeed = document.createElement('link');
+giftofspeed.rel = 'stylesheet';
+giftofspeed.href = 'assets/css/bootstrap.min.css';
+giftofspeed.type = 'text/css';
+var godefer = document.getElementsByTagName('link')[0];
+godefer.parentNode.insertBefore(giftofspeed, godefer);
+
 if (window.screen.availHeight <= 824)
 {
     if (navigator.userAgent.indexOf("Chrome")!== -1 || navigator.userAgent.indexOf("Safari")!== -1)
@@ -113,4 +120,5 @@ $(document).ready(function () {
         });
     });
 })
+
 
