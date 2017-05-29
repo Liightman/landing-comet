@@ -4,45 +4,90 @@ RewriteRule ^ /%1 [NC,L,R]
 RewriteCond %{REQUEST_FILENAME}.html -f
 RewriteRule ^ %{REQUEST_URI}.html [NC,L]
 
-RewriteEngine on
-#Check to see if browser can accept gzip files. If so and we have it - serve it!
-ReWriteCond %{HTTP:accept-encoding} gzip
-RewriteCond %{HTTP_USER_AGENT} !Safari
-#make sure there's no trailing .gz on the url
-ReWriteCond %{REQUEST_FILENAME} !^.+\.gz$
-#check to see if a .gz version of the file exists.
-RewriteCond %{REQUEST_FILENAME}.gz -f
-#All conditions met so add .gz to URL filename (invisibly)
-RewriteRule ^(.+) $1.gz [QSA,L]
-<IfModule mod_gzip.c>
-mod_gzip_on Yes
-mod_gzip_dechunk Yes
-mod_gzip_keep_workfiles No
-mod_gzip_can_negotiate Yes
-mod_gzip_add_header_count Yes
-mod_gzip_send_vary Yes
-mod_gzip_command_version '/mod_gzip_status'
-mod_gzip_min_http 1000
-mod_gzip_minimum_file_size 300
-mod_gzip_maximum_file_size 512000
-mod_gzip_maximum_inmem_size 60000
-mod_gzip_handle_methods GET POST
-mod_gzip_temp_dir /tmp
-mod_gzip_item_include file \.html$
-mod_gzip_item_include file \.php$
-mod_gzip_item_include file \.pl$
-mod_gzip_item_include file \.rb$
-mod_gzip_item_include file \.py$
-mod_gzip_item_include file \.cgi$
-mod_gzip_item_include file \.css$
-mod_gzip_item_include file \.js$
-mod_gzip_item_include mime ^application/javascript$
-mod_gzip_item_include mime ^application/x-javascript$
-mod_gzip_item_include mime ^text/.*
-mod_gzip_item_include mime ^httpd/unix-directory$
-mod_gzip_item_include handler ^cgi-script$
-mod_gzip_item_include handler ^server-status$
-mod_gzip_item_include handler ^server-info$
-mod_gzip_item_include handler ^application/x-httpd-php
-mod_gzip_item_exclude mime ^image/.*
+# ######################################################################
+# # WEB PERFORMANCE                                                    #
+# ######################################################################
+
+# ----------------------------------------------------------------------
+# | Compression                                                        |
+# ----------------------------------------------------------------------
+
+<IfModule mod_deflate.c>
+
+    # Force compression for mangled `Accept-Encoding` request headers
+    # https://developer.yahoo.com/blogs/ydn/pushing-beyond-gzipping-25601.html
+
+    <IfModule mod_setenvif.c>
+        <IfModule mod_headers.c>
+            SetEnvIfNoCase ^(Accept-EncodXng|X-cept-Encoding|X{15}|~{15}|-{15})$ ^((gzip|deflate)\s*,?\s*)+|[X~-]{4,13}$ HAVE_Accept-Encoding
+            RequestHeader append Accept-Encoding "gzip,deflate" env=HAVE_Accept-Encoding
+        </IfModule>
+    </IfModule>
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    # Compress all output labeled with one of the following media types.
+    #
+    # (!) For Apache versions below version 2.3.7 you don't need to
+    # enable `mod_filter` and can remove the `<IfModule mod_filter.c>`
+    # and `</IfModule>` lines as `AddOutputFilterByType` is still in
+    # the core directives.
+    #
+    # https://httpd.apache.org/docs/current/mod/mod_filter.html#addoutputfilterbytype
+
+    <IfModule mod_filter.c>
+        AddOutputFilterByType DEFLATE "application/atom+xml" \
+                                      "application/javascript" \
+                                      "application/json" \
+                                      "application/ld+json" \
+                                      "application/manifest+json" \
+                                      "application/rdf+xml" \
+                                      "application/rss+xml" \
+                                      "application/schema+json" \
+                                      "application/vnd.geo+json" \
+                                      "application/vnd.ms-fontobject" \
+                                      "application/x-font-ttf" \
+                                      "application/x-javascript" \
+                                      "application/x-web-app-manifest+json" \
+                                      "application/xhtml+xml" \
+                                      "application/xml" \
+                                      "font/eot" \
+                                      "font/opentype" \
+                                      "image/bmp" \
+                                      "image/svg+xml" \
+                                      "image/vnd.microsoft.icon" \
+                                      "image/x-icon" \
+                                      "text/cache-manifest" \
+                                      "text/css" \
+                                      "text/html" \
+                                      "text/javascript" \
+                                      "text/plain" \
+                                      "text/vcard" \
+                                      "text/vnd.rim.location.xloc" \
+                                      "text/vtt" \
+                                      "text/x-component" \
+                                      "text/x-cross-domain-policy" \
+                                      "text/xml"
+
+    </IfModule>
+
+    # - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -
+
+    # Map the following filename extensions to the specified
+    # encoding type in order to make Apache serve the file types
+    # with the appropriate `Content-Encoding` response header
+    # (do note that this will NOT make Apache compress them!).
+    #
+    # If these files types would be served without an appropriate
+    # `Content-Enable` response header, client applications (e.g.:
+    # browsers) wouldn't know that they first need to uncompress
+    # the response, and thus, wouldn't be able to understand the
+    # content.
+    #
+    # https://httpd.apache.org/docs/current/mod/mod_mime.html#addencoding
+
+    <IfModule mod_mime.c>
+        AddEncoding gzip              svgz
+    </IfModule>
+
 </IfModule>
