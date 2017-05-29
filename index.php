@@ -115,14 +115,15 @@
             </div>
         </div>
         <script type="text/javascript">
+            if (location.protocol !== 'https:')
+                location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+
             $('.cta-button').on('mouseover', function(){
               $($(this).parent().find("img")[0]).addClass('floating');
             }).on('mouseout', function(){
               $($(this).parent().find("img")[0]).removeClass('floating');
             })
 
-        </script>
-        <script type="text/javascript">
             setTimeout(popup, 2000);
 
             function popup(){
