@@ -111,6 +111,6 @@
                     src="https://code.jquery.com/jquery-3.2.1.min.js"
                     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
                     crossorigin="anonymous"></script>
-            <script src="assets/js/comet.min.js" type="text/javascript"></script>
+            <script src="assets/js/comet.js" type="text/javascript"></script>
         </body>
     </html>
