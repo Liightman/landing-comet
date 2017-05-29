@@ -22,8 +22,8 @@
             <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_thumbnail.png"/>
             <meta property="og:url" content="https://www.hellocomet.co"/
 
-            <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="bogus"/>
-            <link href="assets/css/helloComet-1536.css" rel="stylesheet" type="text/css" media="bogus"/>
+            <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+            <link href="assets/css/helloComet-1536.css" rel="stylesheet" type="text/css"/>
         </head>
 
 
@@ -113,8 +113,5 @@
                     crossorigin="anonymous"></script>
             <script defer src="assets/js/bootstrap.min.js" type="text/javascript"></script>
             <script defer src="assets/js/index.js" type="text/javascript"></script>
-
-            <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
-            <link href="assets/css/helloComet-1536.css" rel="stylesheet" type="text/css"/>
         </body>
     </html>
