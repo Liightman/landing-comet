@@ -59,17 +59,19 @@
 
 
         <div class="container" style="padding-bottom: 6rem">
-            <h1 id="we-are-comet" class="col-lg-8">Nous sommes <b><u>comet</u></b>,
+            <h2 id="we-are-comet" class="col-lg-8">Nous sommes <b><u>comet</u></b>,
                 <br>la nouvelle manière
                 <br>de travailler en tech/data
-            </h1>
+            </h2>
 
             <div class="col-lg-12">
                 <img src="assets/images/svg/we-are-separator.svg" alt="separator" class="we-are-comet-separator">
             </div>
 
             <div id="presentation" class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
-                <b><u>comet</u></b> connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes.
+                <h3>
+                    <b><u>comet</u></b> connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes.
+                </h3>
             </div>
 
             <div id="callActions" class="col-lg-8">
