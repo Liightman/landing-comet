@@ -278,6 +278,11 @@ body {
     background-image: none
 }
 
+div > h3 {
+    text-transform: none !important;
+    font-weight: inherit !important;
+    font-size: 20px;
+}
 .btn-primary,
 .btn-xl,
 h1,
@@ -286,7 +291,7 @@ h3,
 h4,
 h5,
 h6 {
-    font-family NiveauGroteskBold, sans-serif;
+    font-family: NiveauGroteskBold, sans-serif;
     text-transform: uppercase;
     font-weight: 700
 }
