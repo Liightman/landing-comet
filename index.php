@@ -37,9 +37,9 @@
                 a.appendChild(r);
             })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
         </script>
-        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/helloComet-1536.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/helloComet-1536-responsive.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="bogus" />
+        <link href="assets/css/helloComet-1536.css" rel="stylesheet" type="text/css" media="bogus" />
+        <link href="assets/css/helloComet-1536-responsive.css" rel="stylesheet" type="text/css" media="bogus" />
     </head>
     
 
@@ -156,5 +156,8 @@
           });
         })
         </script>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/helloComet-1536.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/helloComet-1536-responsive.css" rel="stylesheet" type="text/css"/>
     </body>
 </html>
