@@ -32,7 +32,7 @@
                href="https://s3.eu-west-2.amazonaws.com/comet-assets/Comet_Mentions+L%C3%A9gales.pdf" id="mention"
                style="bottom: 2rem;">MENTIONS LÉGALES</a>
             <a class="clicks" target="_blank" href="https://app.hellocomet.co/connexion_free" style="top: 3rem">
-                <img src="https://s3.eu-west-2.amazonaws.com/comet-assets/Fichier1.svg" style="height:30px">
+                <img src="assets/images/svg/Fichier1.svg" style="height:30px">
                 CONNEXION </a>
 
             <div>
