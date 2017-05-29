@@ -2,6 +2,6 @@ Options +FollowSymLinks
 RewriteEngine on
 
 RewriteCond %{HTTPS} off
-RewriteCond %{HTTP_HOST} = www.hellocomet.co
+RewriteCond %{HTTP_HOST} =www.hellocomet.co
 RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301]
 
