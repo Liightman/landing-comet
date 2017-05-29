@@ -38,7 +38,7 @@
             <div>
                 <div class="container first-container" style="margin-top: 2rem;">
                     <div class="col-lg-6">
-                        <img src="assets/images/logo/logo.png" alt="Comet" class="logo">
+                        <img src="assets/images/svg/logo.svg" alt="Comet" class="logo">
                     </div>
                 </div>
 
@@ -50,7 +50,7 @@
                     </h2>
 
                     <div class="col-lg-12">
-                        <img src="assets/images/we-are-separator.png" alt="separator" class="we-are-comet-separator">
+                        <img src="assets/images/svg/we-are-separator.svg" alt="separator" class="we-are-comet-separator">
                     </div>
 
                     <div id="presentation" class="col-xs-12 col-sm-12 col-md-8 col-lg-6">
@@ -63,7 +63,7 @@
                     <div id="callActions" class="col-lg-8">
                         <div class="col-xs-12 col-sm-12 col-lg-5">
                             <div>
-                                <img src="assets/images/astronaut.png" alt="Freelances" class="astronaut center hidden-xs">
+                                <img src="assets/images/svg/astronaut.svg" alt="Freelances" class="astronaut center hidden-xs">
                                 <div id="freelances-text" class="center destination col-xs-12 col-sm-12 col-lg-12">Freelances</div>
                             </div>
                             <button id="freelancesActionButton" name="Freelance_Landing_Button"
@@ -76,7 +76,7 @@
                         </div>
                         <hr class="hidden-lg col-xs-12 col-md-11">
                         <div class="col-xs-12 col-sm-12 col-lg-5">
-                            <img src="assets/images/planet.png" alt="Freelances" class="planet center hidden-xs">
+                            <img src="assets/images/svg/planet.svg" alt="Freelances" class="planet center hidden-xs">
                             <div id="business-text" class="col-xs-12 destination col-sm-12 col-lg-12 center">Entreprises</div>
                             <button id="businessActionButton" name="Entreprise_Landing_Button"
                                     class="cta-button btn col-xs-12 col-sm-12 col-lg-12 center">
