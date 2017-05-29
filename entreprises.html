@@ -1,338 +1,436 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Comet, une solution simple et transparente pour vous faciliter la vie." />
-        <meta name="author" content="Llyam Garcia, Comet" />
-        <meta name="keywords" content="Comet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png" sizes="16x16">
-        <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png" sizes="32x32">
-        <link rel="shortcut icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Comet, une solution simple et transparente pour vous faciliter la vie."/>
+    <meta name="author" content="Llyam Garcia, Comet"/>
+    <meta name="keywords" content="Comet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png"
+          sizes="16x16">
+    <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png"
+          sizes="32x32">
+    <link rel="shortcut icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png">
 
-        <title>Comet</title>
-        <!-- Hotjar Tracking Code for http://www.hellocomet.co -->
-        <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:485099,hjsv:5};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
-        <!-- meta fb -->
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="comet - la solution pour accélérer vos projets tech/data" %>
-        <meta property="og:description" content="comet accélère vos projets en vous connectant aux meilleurs développeurs, data-scientists et autres experts tech/data" />
-        <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_thumbnail.png" />
-        <meta property="og:url" content= "https://www.hellocomet.co/entreprises"/>
-        <!-- tracking segment -->
-        <script type="text/javascript">
-          !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
-          analytics.load("7iOqS9L3PoyGRj04HhCqfZfkR7ofjIFV");
-          analytics.page();
-          }}();
-        </script>
-            <!-- tracking intercom -->
-         <script type="text/javascript">
-         window.intercomSettings = {
-           app_id: "nr701pks"
-         };
-        </script>
-        <script  type="text/javascript">(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/APP_ID';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/helloComet-entreprises.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/helloComet-entreprises-timeline.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    </head>
+    <title>Comet</title>
+    <!-- Hotjar Tracking Code for http://www.hellocomet.co -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+            h._hjSettings = {hjid: 485099, hjsv: 5};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- meta fb -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="comet - la solution pour accélérer vos projets tech/data" %>
+    <meta property="og:description"
+          content="comet accélère vos projets en vous connectant aux meilleurs développeurs, data-scientists et autres experts tech/data"/>
+    <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_thumbnail.png"/>
+    <meta property="og:url" content="https://www.hellocomet.co/entreprises"/>
+    <!-- tracking segment -->
+    <script type="text/javascript">
+        !function () {
+            var analytics = window.analytics = window.analytics || [];
+            if (!analytics.initialize)if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0;
+                analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"];
+                analytics.factory = function (t) {
+                    return function () {
+                        var e = Array.prototype.slice.call(arguments);
+                        e.unshift(t);
+                        analytics.push(e);
+                        return analytics
+                    }
+                };
+                for (var t = 0; t < analytics.methods.length; t++) {
+                    var e = analytics.methods[t];
+                    analytics[e] = analytics.factory(e)
+                }
+                analytics.load = function (t) {
+                    var e = document.createElement("script");
+                    e.type = "text/javascript";
+                    e.async = !0;
+                    e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                    var n = document.getElementsByTagName("script")[0];
+                    n.parentNode.insertBefore(e, n)
+                };
+                analytics.SNIPPET_VERSION = "4.0.0";
+                analytics.load("7iOqS9L3PoyGRj04HhCqfZfkR7ofjIFV");
+                analytics.page();
+            }
+        }();
+    </script>
+    <!-- tracking intercom -->
+    <script type="text/javascript">
+        window.intercomSettings = {
+            app_id: "nr701pks"
+        };
+    </script>
+    <script type="text/javascript">(function () {
+        var w = window;
+        var ic = w.Intercom;
+        if (typeof ic === "function") {
+            ic('reattach_activator');
+            ic('update', intercomSettings);
+        } else {
+            var d = document;
+            var i = function () {
+                i.c(arguments)
+            };
+            i.q = [];
+            i.c = function (args) {
+                i.q.push(args)
+            };
+            w.Intercom = i;
+            function l() {
+                var s = d.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://widget.intercom.io/widget/APP_ID';
+                var x = d.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
 
-    <body id="page-top" class="index">
+            if (w.attachEvent) {
+                w.attachEvent('onload', l);
+            } else {
+                w.addEventListener('load', l, false);
+            }
+        }
+    })()</script>
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/helloComet-entreprises.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/helloComet-entreprises-timeline.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+</head>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/images/svg/logo.svg" alt="Comet" class="logo"></a>
-            </div>
+<body id="page-top" class="index">
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a href="https://app.hellocomet.co/connexion_entreprise" class="page-scroll">Connexion</a>
-                    </li>
-                    <li>
-                        <a href="about.html" class="page-scroll">À Propos</a>
-                    </li>
-                    <li>
-                        <a href="freelances.html" class="page-scroll">Freelances</a>
-                    </li>
-                    <li class="active">
-                        <a href="entreprises.html" class="page-scroll">Entreprises</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/images/svg/logo.svg" alt="Comet"
+                                                                      class="logo"></a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <!-- Header -->
-    <header id="entreprises-header">
-        <div class="container">
-            <div class="intro-text">
-                <h1 class="intro-heading">
-                    La solution la plus puissante 
-                    <br>pour accélérer vos projets <br> tech/data.
-                </h1>
-                <div class="intro-heading-speech">
-                    <b><u>comet</u></b> accélère vos projets en vous connectant aux meilleurs <br>  développeurs, data-scientists et autres experts tech/data
-                </div>
-                <a href="https://app.hellocomet.co/inscription_entreprise" class="btn btn-xl">
-                    Trouvez-moi un freelance
-                    <img class="leftArrow" src="assets/images/left-arrow.png" alt="Trouver un freelance">
-                </a>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a href="https://app.hellocomet.co/connexion_entreprise" class="page-scroll">Connexion</a>
+                </li>
+                <li>
+                    <a href="about.html" class="page-scroll">À Propos</a>
+                </li>
+                <li>
+                    <a href="freelances.html" class="page-scroll">Freelances</a>
+                </li>
+                <li class="active">
+                    <a href="entreprises.html" class="page-scroll">Entreprises</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header id="entreprises-header">
+    <div class="container">
+        <div class="intro-text">
+            <h1 class="intro-heading">
+                La solution la plus puissante
+                <br>pour accélérer vos projets <br> tech/data.
+            </h1>
+            <div class="intro-heading-speech">
+                <b><u>comet</u></b> accélère vos projets en vous connectant aux meilleurs <br> développeurs,
+                data-scientists et autres experts tech/data
             </div>
-             <div id="client-logos">
-                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/logoTFblanc.png"></span>
-                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/engie.png"></span>
-                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/make.png"></span>
-                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/afrostream.png"></span>
-                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/teradata.png"></span>
-                <span><img src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/publicis-groupe-logo@2x.png"></span>
+            <a href="https://app.hellocomet.co/inscription_entreprise" class="btn btn-xl">
+                Trouvez-moi un freelance
+                <img class="leftArrow" src="assets/images/left-arrow.png" alt="Trouver un freelance">
+            </a>
+        </div>
+        <div id="client-logos">
+            <span><img alt="The Family"
+                       src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/logoTFblanc.png"></span>
+            <span><img alt="Engie" src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/engie.png"></span>
+            <span><img alt="Make.org" src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/make.png"></span>
+            <span><img alt="Afrostream"
+                       src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/afrostream.png"></span>
+            <span><img alt="Teradata"
+                       src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/teradata.png"></span>
+            <span><img alt="Publicic Groupe"
+                       src="https://s3.eu-west-2.amazonaws.com/skillee-assets/2_clients/publicis-groupe-logo@2x.png"></span>
+        </div>
+    </div>
+
+</header>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="howitswork">Comment ça marche ?</h2>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center pads">
+                <!--<img src="assets/images/svg/back-howitsworks.svg" class="img-responsive img-centered howitswork-back">-->
+                <div class="col-lg-12">
+                    <img src="assets/images/group-21.svg" alt="DÉPOSEZ VOTRE BESOIN"
+                         class="img-responsive img-centered howitswork-img">
+                </div>
+                <div class="col-lg-12">
+                    <div style="padding: 1rem 0rem" class="how-msg center col-lg-12">DÉPOSEZ VOTRE BESOIN</div>
+                    <span class="desc">2 min</span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center pads">
+                <div class="col-lg-12">
+                    <img src="assets/images/svg/astronaut-entreprises.svg" alt="PREMIER CONTACT<"
+                         class="img-responsive img-centered howitswork-img">
+                </div>
+                <div class="col-lg-12">
+                    <div style="padding: 1rem 0rem" class="how-msg center col-lg-12">PREMIER CONTACT</div>
+                    <span class="desc">quelques heures</span>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 text-center pads">
+                <div class="col-lg-12">
+                    <img src="assets/images/svg/save-time.svg" alt="PAIEMENT ET CONTRATS SÉCURISÉS EN LIGNE"
+                         class="img-responsive img-centered howitswork-img">
+                </div>
+                <div class="col-lg-12">
+                    <div style="padding: 1rem 0rem" class="how-msg center col-lg-12">PAIEMENT ET CONTRATS SÉCURISÉS EN
+                        LIGNE
+                    </div>
+                    <span class="desc">2 min</span>
+                </div>
+
             </div>
         </div>
+    </div>
+</section>
 
-    </header>
-
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="howitswork">Comment ça marche ?</h2>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center pads">
-                    <!--<img src="assets/images/svg/back-howitsworks.svg" class="img-responsive img-centered howitswork-back">-->
-                    <div class="col-lg-12">
-                        <img src="assets/images/group-21.svg" class="img-responsive img-centered howitswork-img">
-                    </div>
-                    <div class="col-lg-12">
-                        <div style="padding: 1rem 0rem" class="how-msg center col-lg-12">DÉPOSEZ VOTRE BESOIN</div>
-                        <span class="desc">2 min</span>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center pads">
-                    <div class="col-lg-12">
-                        <img src="assets/images/svg/astronaut-entreprises.svg" class="img-responsive img-centered howitswork-img">
-                    </div>
-                    <div class="col-lg-12">
-                        <div style="padding: 1rem 0rem" class="how-msg center col-lg-12">PREMIER CONTACT</div>
-                        <span class="desc">quelques heures</span>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-4 text-center pads">
-                    <div class="col-lg-12">
-                        <img src="assets/images/svg/save-time.svg" class="img-responsive img-centered howitswork-img">
-                    </div>
-                    <div class="col-lg-12">
-                        <div style="padding: 1rem 0rem" class="how-msg center col-lg-12">PAIEMENT ET CONTRATS SÉCURISÉS EN LIGNE</div>
-                        <span class="desc">2 min</span>
-                    </div>
-
-                </div>
+<section class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="howitswork">Un pool de talents qualifiés</h2>
             </div>
         </div>
-    </section>
-
-    <section class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="howitswork">Un pool de talents qualifiés</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="row padding">
-                    <div class="col-lg-12">
+        <div class="row">
+            <div class="row padding">
+                <div class="col-lg-12">
 
                     <div id="cd-timeline" class="cd-container">
                         <div class="cd-timeline-block">
                             <div class="cd-timeline-img planet-format img-first">
 
-                                <img style= "position: absolute; left: -1rem; top: 7rem;" src="assets/images/stroke-102@3x.png">
+                                <img style="position: absolute; left: -1rem; top: 7rem;"
+                                     src="assets/images/stroke-102@3x.png">
 
                             </div>
 
                             <div class="cd-timeline-content">
                                 <h3> PERSONNALITÉ</h3>
                                 <p>
-                                    Nous nous entretenons avec chacun des freelances qui souhaite nous rejoindre. Echanger avec eux, découvrir leur état d’esprit, apprécier leur savoir-être, c'est la première étape nécessaire à toute bonne collaboration.
+                                    Nous nous entretenons avec chacun des freelances qui souhaite nous rejoindre.
+                                    Echanger avec eux, découvrir leur état d’esprit, apprécier leur savoir-être, c'est
+                                    la première étape nécessaire à toute bonne collaboration.
                                 </p>
                             </div>
                         </div> <!-- cd-timeline-block -->
 
                         <div class="cd-timeline-block">
-                            <div class="cd-timeline-img planet-format img-second is-hidden"> 
-                            <img style= "position: absolute; left: 7rem; top: 7rem;" src="assets/images/stroke-100@3x.png">
+                            <div class="cd-timeline-img planet-format img-second is-hidden">
+                                <img style="position: absolute; left: 7rem; top: 7rem;"
+                                     src="assets/images/stroke-100@3x.png">
 
                             </div>
 
                             <div class="cd-timeline-content  is-hidden">
                                 <h3>TEST TECHNIQUE</h3>
                                 <p>
-                                    Chaque Freelance passe ensuite plusieurs tests techniques qui lui permettent de valider ses compétences. Chez <b><u>comet</u></b>, seules les compétences validées par nos tests sont prises en compte.
+                                    Chaque Freelance passe ensuite plusieurs tests techniques qui lui permettent de
+                                    valider ses compétences. Chez <b><u>comet</u></b>, seules les compétences validées
+                                    par nos tests sont prises en compte.
                                 </p>
                             </div>
                         </div> <!-- cd-timeline-block -->
 
                         <div class="cd-timeline-block">
-                            <div class="cd-timeline-img planet-format img-third is-hidden"> 
-                                 <img style= "position: absolute; left: -1rem; top: 7rem;" src="assets/images/stroke-102@3x.png">
+                            <div class="cd-timeline-img planet-format img-third is-hidden">
+                                <img style="position: absolute; left: -1rem; top: 7rem;"
+                                     src="assets/images/stroke-102@3x.png">
                             </div>
 
                             <div class="cd-timeline-content is-hidden">
                                 <h3>PRISE DE RÉFÉRENCE</h3>
                                 <p>
-                                    Nous vérifions ensuite leurs expériences passées, en bénéficiant des retours d'anciens clients, managers ou collègues.
+                                    Nous vérifions ensuite leurs expériences passées, en bénéficiant des retours
+                                    d'anciens clients, managers ou collègues.
                                 </p>
                             </div>
                         </div> <!-- cd-timeline-block -->
 
                         <div class="cd-timeline-block">
                             <div class="cd-timeline-img planet-format img-fourth is-hidden">
-                            <img style= "position: absolute; left: 7rem; top: 7rem;" src="assets/images/stroke-100@3x.png">
+                                <img style="position: absolute; left: 7rem; top: 7rem;"
+                                     src="assets/images/stroke-100@3x.png">
                             </div>
 
                             <div class="cd-timeline-content is-hidden">
                                 <h3> ÉVALUATION CONSTANTE</h3>
-                                    <p>
-                                        Au terme de chacun de leurs projets, les entreprises évaluent le travail réalisé par les freelances. Ce suivi permanent nous garantit de garder les meilleurs talents.
-                                    </p>
+                                <p>
+                                    Au terme de chacun de leurs projets, les entreprises évaluent le travail réalisé par
+                                    les freelances. Ce suivi permanent nous garantit de garder les meilleurs talents.
+                                </p>
                             </div>
                         </div> <!-- cd-timeline-block -->
-                         <div class="cd-timeline-block">
-                            <div class="cd-timeline-img planet-format img-fifth is-hidden"> </div>
+                        <div class="cd-timeline-block">
+                            <div class="cd-timeline-img planet-format img-fifth is-hidden"></div>
                         </div> <!-- cd-timeline-block -->
                     </div> <!-- cd-timeline -->
-                    </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="howitswork">Le matching</h2>
-                </div>
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="howitswork">Le matching</h2>
+            </div>
 
-                <div class="col-lg-12 padding">
+            <div class="col-lg-12 padding">
 
                 <div class="row" id="matching-part">
-                        
+
                     <div class='slottt-machine-recipe__mask' id='trigger_slot'>
-                      <div class='slottt-machine-recipe__items_container'></div>
+                        <div class='slottt-machine-recipe__items_container'></div>
                     </div>
-                    
-                       
-                        <div id="maching" >
-                            <img class="img-responsive" src="assets/images/page-1.svg">
-                        </div>
-                    
-                    
+
+
+                    <div id="maching">
+                        <img alt="Le Matching" class="img-responsive" src="assets/images/page-1.svg">
+                    </div>
+
+
                     <div class='slottt-machine-recipe__mask' id='action_slot'>
-                      <div class='slottt-machine-recipe__items_container second_slot'></div>
+                        <div class='slottt-machine-recipe__items_container second_slot'></div>
                     </div>
-                    
-                </div>
-                    <!-- <img draggable="false" src="assets/images/matching.png" class="img-responsive img-centered"> -->
-                </div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6 text-center matching-text padding">
-                    <span style="font-family: NiveauGroteskBold, serif; font-size: 24px; text-transform: uppercase">Une technique de matching<br>entre les talents et les missions </span>
-                    <p style='margin-top:2rem'>
-                        Grâce à nos algorithmes de matching et notre mapping des talents, nous sommes capables de trouver rapidement la compétence idéale pour votre mission. Finies les recherches infructueuses, les screenings de CVs, les entretiens à la chaîne, etc.
-                    </p>
-                </div>
-                <div class="col-lg-3"></div>
-            </div>
-        </div>
-    </section>
 
-    <section class="bg-light-gray">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2 class="howitswork">Une plateforme sur-mesure pour <br>les entreprises les plus innovantes</h2>
                 </div>
-                <div class="col-lg-3"></div>
-                <div class="col-lg-6 text-center matching-text padding">
-                    <p>
-                        Nous supprimons les intermédiaires pour apporter une totale transparence et remettre la compétence au centre du système. <br><b>simple // sûre // intelligente // instantanée</b>
-                    </p>
-                </div>
-                <div class="col-lg-4"></div>
-                <div class="col-lg-12 padding">
-                    <img draggable="false" src="assets/images/station.png" class="img-responsive img-centered">
-                </div>
+                <!-- <img draggable="false" src="assets/images/matching.png" class="img-responsive img-centered"> -->
             </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 text-center matching-text padding">
+                <span style="font-family: NiveauGroteskBold, serif; font-size: 24px; text-transform: uppercase">Une technique de matching<br>entre les talents et les missions </span>
+                <p style='margin-top:2rem'>
+                    Grâce à nos algorithmes de matching et notre mapping des talents, nous sommes capables de trouver
+                    rapidement la compétence idéale pour votre mission. Finies les recherches infructueuses, les
+                    screenings de CVs, les entretiens à la chaîne, etc.
+                </p>
+            </div>
+            <div class="col-lg-3"></div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- feedback Section -->
-    <section id="feedback">
+<section class="bg-light-gray">
     <div class="container">
-        <div class="row carousel slide" id="carousel-example-generic" >
-        <!-- data-ride="carousel" -->
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="howitswork">Une plateforme sur-mesure pour <br>les entreprises les plus innovantes</h2>
+            </div>
+            <div class="col-lg-3"></div>
+            <div class="col-lg-6 text-center matching-text padding">
+                <p>
+                    Nous supprimons les intermédiaires pour apporter une totale transparence et remettre la compétence
+                    au centre du système. <br><b>simple // sûre // intelligente // instantanée</b>
+                </p>
+            </div>
+            <div class="col-lg-4"></div>
+            <div class="col-lg-12 padding">
+                <img alt="Une plateforme sur-mesure pour les entreprises les plus innovantes" draggable="false"
+                     src="assets/images/station.png" class="img-responsive img-centered">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- feedback Section -->
+<section id="feedback">
+    <div class="container">
+        <div class="row carousel slide" id="carousel-example-generic">
+            <!-- data-ride="carousel" -->
             <div class="carousel-inner col-md-11">
                 <div class="item">
                     <div class="col-md-5 col-xs-12" style="padding: initial">
-                        <img src="assets/images/les-jedis-obi-wan-kenobi-dans-episode-iv-saga-ressemblent-parfois-etrangement-moines-franciscains-1-730-415.png" class="img-responsive">
+                        <img alt="François Kobe"
+                             src="assets/images/les-jedis-obi-wan-kenobi-dans-episode-iv-saga-ressemblent-parfois-etrangement-moines-franciscains-1-730-415.png"
+                             class="img-responsive">
                     </div>
                     <div class="col-md-6 col-xs-12 feedback">
                         <div class="text">
                             <div class="text-group">
-                                
-                                <img src="assets/images/svg/astronaut-black.svg">
-                                
+
+                                <img alt="Astronaut" src="assets/images/svg/astronaut-black.svg">
+
                                 <div class="text-title">
                                     <div class="author">François Kobe</div>
                                     <div class="info">En mission chez Renault Digital</div>
                                 </div>
                             </div>
 
-                            <b><u>Comet</u></b>, c’est une équipe qui a pris le temps de comprendre et d’écouter les Freelances, qui a conscience qu’une bonne mission c’est mieux qu’une mission a tout prix, et qui tente de tout faire pour nous faciliter la vie. Et en plus ils se payent le luxe d’être sympa. Perso c’est exactement ce que j’attendais !
-                            
+                            <b><u>Comet</u></b>, c’est une équipe qui a pris le temps de comprendre et d’écouter les
+                            Freelances, qui a conscience qu’une bonne mission c’est mieux qu’une mission a tout prix, et
+                            qui tente de tout faire pour nous faciliter la vie. Et en plus ils se payent le luxe d’être
+                            sympa. Perso c’est exactement ce que j’attendais !
+
                         </div>
                     </div>
                 </div>
                 <div class="item active">
                     <div class="col-md-5 col-md-offset-1 col-xs-12" style="padding: 3rem">
-                        <img src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/p/2/000/0a6/372/30714af.jpg" style="box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0" class="img-responsive">
+                        <img alt="Antoine Louiset"
+                             src="https://media.licdn.com/mpr/mpr/shrinknp_800_800/p/2/000/0a6/372/30714af.jpg"
+                             style="box-shadow: 0 0 10px 0 rgba(10, 10, 10, 0)" class="img-responsive">
                     </div>
                     <div class="col-md-6 col-xs-12 feedback">
                         <div class="text">
                             <div class="text-group">
-                                
-                                <img src="assets/images/svg/astronaut-black.svg">
-                                
+
+                                <img alt="Astronaut" src="assets/images/svg/astronaut-black.svg">
+
                                 <div class="text-title">
                                     <div class="author">Antoine Louiset</div>
                                     <div class="info">CTO Chez Yousign</div>
                                 </div>
                             </div>
 
-                            Nous avons travaillé avec <b><u>comet</u></b> plus de 3 mois. Ils ont su trouver immédiatement le talent dont nous avions besoin pour accélérer notre développement. Le matching ultra pertinent nous a fait gagner un temps fou !
+                            Nous avons travaillé avec <b><u>comet</u></b> plus de 3 mois. Ils ont su trouver
+                            immédiatement le talent dont nous avions besoin pour accélérer notre développement. Le
+                            matching ultra pertinent nous a fait gagner un temps fou !
 
-                            
+
                         </div>
                     </div>
                 </div>
@@ -345,47 +443,51 @@
             </div>
         </div>
     </div>
-    </section>
+</section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-4 col-md-push-4 col-xs-12" id='foot-links'>
-                    <ul class="list-inline quicklinks">
-                        
-                        
-                        <li><a style="color:inherit"  href="/freelances">Freelances</a></li>
-                        <li><a style="color:inherit"  href="/about">À Propos</a></li>
-                        <li><a style="color:inherit" target="_blank" href="https://s3.eu-west-2.amazonaws.com/comet-assets/Comet_Mentions+L%C3%A9gales.pdf">Mentions Légales</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-md-push-4 col-xs-6">
-                    <ul class="list-inline social-buttons" id="foot-social">
-                        <li><a target="_blank" href="https://www.facebook.com/hellocomet/"><i class="fa fa-facebook"></i></a></li>
-                        <li><a target="_blank" href="https://twitter.com/_hellocomet"><i class="fa fa-twitter"></i></a></li>
-                        <li><a target="_blank" href="https://newsroom.hellocomet.co"><i class="fa fa-medium"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-xs-4 col-md-pull-8 col-xs-offset-2">
-                    <a href="#page-top">
-                    <img src="assets/images/svg/logo.svg" alt="Comet" class="img-responsive">
-                    </a>
-                </div>
-                
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4 col-md-push-4 col-xs-12" id='foot-links'>
+                <ul class="list-inline quicklinks">
+
+
+                    <li><a style="color:inherit" href="/freelances">Freelances</a></li>
+                    <li><a style="color:inherit" href="/about">À Propos</a></li>
+                    <li><a style="color:inherit" target="_blank"
+                           href="https://s3.eu-west-2.amazonaws.com/comet-assets/Comet_Mentions+L%C3%A9gales.pdf">Mentions
+                        Légales</a></li>
+                </ul>
             </div>
+            <div class="col-md-3 col-md-push-4 col-xs-6">
+                <ul class="list-inline social-buttons" id="foot-social">
+                    <li><a target="_blank" href="https://www.facebook.com/hellocomet/"><i
+                            class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/_hellocomet"><i class="fa fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://newsroom.hellocomet.co"><i class="fa fa-medium"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-4 col-md-pull-8 col-xs-offset-2">
+                <a href="#page-top">
+                    <img src="assets/images/svg/logo.svg" alt="Comet" class="img-responsive">
+                </a>
+            </div>
+
         </div>
-    </footer>
+    </div>
+</footer>
 
-    <script>
-        if (location.protocol !== 'https:')
-            location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-    </script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+<script>
+    if (location.protocol !== 'https:')
+        location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
+</script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
-    <script src="assets/js/timeline.js" type="text/javascript"></script>
-    <script  src="assets/js/slot.js" type="text/javascript"></script>
-    </body>
+<!-- Bootstrap Core JavaScript -->
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+<script src="assets/js/timeline.js" type="text/javascript"></script>
+<script src="assets/js/slot.js" type="text/javascript"></script>
+</body>
 </html>

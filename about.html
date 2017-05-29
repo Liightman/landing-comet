@@ -1,332 +1,406 @@
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="description" content="Comet, une solution simple et transparente pour vous faciliter la vie." />
-        <meta name="author" content="Llyam Garcia, Comet" />
-        <meta name="keywords" content="Comet" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png" sizes="16x16">
-        <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png" sizes="32x32">
-        <link rel="shortcut icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Comet, une solution simple et transparente pour vous faciliter la vie."/>
+    <meta name="author" content="Llyam Garcia, Comet"/>
+    <meta name="keywords" content="Comet"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png"
+          sizes="16x16">
+    <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png"
+          sizes="32x32">
+    <link rel="shortcut icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png">
 
-        <title>Comet</title>
-        <!-- Hotjar Tracking Code for http://www.hellocomet.co -->
-        <script>
-            (function(h,o,t,j,a,r){
-                h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-                h._hjSettings={hjid:485099,hjsv:5};
-                a=o.getElementsByTagName('head')[0];
-                r=o.createElement('script');r.async=1;
-                r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-                a.appendChild(r);
-            })(window,document,'//static.hotjar.com/c/hotjar-','.js?sv=');
-        </script>
-        <!-- meta fb -->
-        <meta property="og:type" content="website" />
-        <meta property="og:title" content="comet - travaillez librement, vivez autrement" %>
-        <meta property="og:description" content="Nous construisons une solution simple et transparente pour vous faciliter la vie." />
-        <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_thumbnail.png" />
-        <meta property="og:url" content= "http://www.hellocomet.co/entreprises"/>
-        <!-- tracking segment -->
-        <script type="text/javascript">
-          !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t){var e=document.createElement("script");e.type="text/javascript";e.async=!0;e.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var n=document.getElementsByTagName("script")[0];n.parentNode.insertBefore(e,n)};analytics.SNIPPET_VERSION="4.0.0";
-          analytics.load("7iOqS9L3PoyGRj04HhCqfZfkR7ofjIFV");
-          analytics.page();
-          }}();
-        </script>
-         <script type="text/javascript">
-         window.intercomSettings = {
-           app_id: "nr701pks"
-         };
-        </script>
-        <script  type="text/javascript">(function(){var w=window;var ic=w.Intercom;if(typeof ic==="function"){ic('reattach_activator');ic('update',intercomSettings);}else{var d=document;var i=function(){i.c(arguments)};i.q=[];i.c=function(args){i.q.push(args)};w.Intercom=i;function l(){var s=d.createElement('script');s.type='text/javascript';s.async=true;s.src='https://widget.intercom.io/widget/APP_ID';var x=d.getElementsByTagName('script')[0];x.parentNode.insertBefore(s,x);}if(w.attachEvent){w.attachEvent('onload',l);}else{w.addEventListener('load',l,false);}}})()</script>
-        <!-- intercom -->
-        <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css" />
-        <link href="assets/css/helloComet-about.css" rel="stylesheet" type="text/css" />
-        <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
-    </head>
+    <title>Comet</title>
+    <!-- Hotjar Tracking Code for http://www.hellocomet.co -->
+    <script>
+        (function (h, o, t, j, a, r) {
+            h.hj = h.hj || function () {
+                    (h.hj.q = h.hj.q || []).push(arguments)
+                };
+            h._hjSettings = {hjid: 485099, hjsv: 5};
+            a = o.getElementsByTagName('head')[0];
+            r = o.createElement('script');
+            r.async = 1;
+            r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
+            a.appendChild(r);
+        })(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+    </script>
+    <!-- meta fb -->
+    <meta property="og:type" content="website"/>
+    <meta property="og:title" content="comet - travaillez librement, vivez autrement" %>
+    <meta property="og:description"
+          content="Nous construisons une solution simple et transparente pour vous faciliter la vie."/>
+    <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_thumbnail.png"/>
+    <meta property="og:url" content="http://www.hellocomet.co/entreprises"/>
+    <!-- tracking segment -->
+    <script type="text/javascript">
+        !function () {
+            var analytics = window.analytics = window.analytics || [];
+            if (!analytics.initialize)if (analytics.invoked) window.console && console.error && console.error("Segment snippet included twice."); else {
+                analytics.invoked = !0;
+                analytics.methods = ["trackSubmit", "trackClick", "trackLink", "trackForm", "pageview", "identify", "reset", "group", "track", "ready", "alias", "debug", "page", "once", "off", "on"];
+                analytics.factory = function (t) {
+                    return function () {
+                        var e = Array.prototype.slice.call(arguments);
+                        e.unshift(t);
+                        analytics.push(e);
+                        return analytics
+                    }
+                };
+                for (var t = 0; t < analytics.methods.length; t++) {
+                    var e = analytics.methods[t];
+                    analytics[e] = analytics.factory(e)
+                }
+                analytics.load = function (t) {
+                    var e = document.createElement("script");
+                    e.type = "text/javascript";
+                    e.async = !0;
+                    e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+                    var n = document.getElementsByTagName("script")[0];
+                    n.parentNode.insertBefore(e, n)
+                };
+                analytics.SNIPPET_VERSION = "4.0.0";
+                analytics.load("7iOqS9L3PoyGRj04HhCqfZfkR7ofjIFV");
+                analytics.page();
+            }
+        }();
+    </script>
+    <script type="text/javascript">
+        window.intercomSettings = {
+            app_id: "nr701pks"
+        };
+    </script>
+    <script type="text/javascript">(function () {
+        var w = window;
+        var ic = w.Intercom;
+        if (typeof ic === "function") {
+            ic('reattach_activator');
+            ic('update', intercomSettings);
+        } else {
+            var d = document;
+            var i = function () {
+                i.c(arguments)
+            };
+            i.q = [];
+            i.c = function (args) {
+                i.q.push(args)
+            };
+            w.Intercom = i;
+            function l() {
+                var s = d.createElement('script');
+                s.type = 'text/javascript';
+                s.async = true;
+                s.src = 'https://widget.intercom.io/widget/APP_ID';
+                var x = d.getElementsByTagName('script')[0];
+                x.parentNode.insertBefore(s, x);
+            }
 
-    <body id="page-top" class="index">
+            if (w.attachEvent) {
+                w.attachEvent('onload', l);
+            } else {
+                w.addEventListener('load', l, false);
+            }
+        }
+    })()</script>
+    <!-- intercom -->
+    <link href="assets/css/bootstrap.css" rel="stylesheet" type="text/css"/>
+    <link href="assets/css/helloComet-about.css" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" href="assets/font-awesome/css/font-awesome.min.css">
+</head>
 
-    <!-- Navigation -->
-    <nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                    <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
-                </button>
-                <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/images/svg/logo.svg" alt="Comet" class="logo"></a>
-            </div>
+<body id="page-top" class="index">
 
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="hidden">
-                        <a href="#page-top"></a>
-                    </li>
-                    <li>
-                        <a  target="_blank" href="https://app.hellocomet.co/connexion_free" class="page-scroll">Connexion</a>
-                    </li>
-                    <li class="active">
-                        <a href="about.html"  class="page-scroll">À Propos</a>
-                    </li>
-                    <li>
-                        <a href="freelances.html" class="page-scroll">Freelances</a>
-                    </li>
-                    <li>
-                        <a href="entreprises.html" class="page-scroll">Entreprises</a>
-                    </li>
-                </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+<!-- Navigation -->
+<nav id="mainNav" class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header page-scroll">
+            <button type="button" class="navbar-toggle" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1">
+                <span class="sr-only">Toggle navigation</span> <i class="fa fa-bars"></i>
+            </button>
+            <a class="navbar-brand page-scroll" href="#page-top"><img src="assets/images/svg/logo.svg" alt="Comet"
+                                                                      class="logo"></a>
         </div>
-        <!-- /.container-fluid -->
-    </nav>
 
-    <!-- Header -->
-    <header>
-        <div class="container">
-            <div class="col-md-6 intro-text">
-                <h1 class="col-md-12 intro-heading">
-                    Travaillez librement,
-                    <br>vivez autrement.
-                </h1>
-                <div class="col-md-12 col-xs-8 intro-heading-speech">
-                    Nous construisons une solution simple et transparente pour vous faciliter la vie.
-                </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="hidden">
+                    <a href="#page-top"></a>
+                </li>
+                <li>
+                    <a target="_blank" href="https://app.hellocomet.co/connexion_free" class="page-scroll">Connexion</a>
+                </li>
+                <li class="active">
+                    <a href="about.html" class="page-scroll">À Propos</a>
+                </li>
+                <li>
+                    <a href="freelances.html" class="page-scroll">Freelances</a>
+                </li>
+                <li>
+                    <a href="entreprises.html" class="page-scroll">Entreprises</a>
+                </li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container-fluid -->
+</nav>
+
+<!-- Header -->
+<header>
+    <div class="container">
+        <div class="col-md-6 intro-text">
+            <h1 class="col-md-12 intro-heading">
+                Travaillez librement,
+                <br>vivez autrement.
+            </h1>
+            <div class="col-md-12 col-xs-8 intro-heading-speech">
+                Nous construisons une solution simple et transparente pour vous faciliter la vie.
             </div>
         </div>
-    </header>
+    </div>
+</header>
 
-    <section style="background-color:#ff9274">
-        <div class="container">
-           
-           <div class="col-lg-4 col-xs-12 pads speech">Pour être numéro 1, l’entreprise d’aujourd’hui doit attirer les meilleurs.</div>
-           <div class="col-lg-4 col-xs-12 pads speech">De nos jours, la plupart d’entre eux sont indépendants.</div>
-            <div class="col-lg-4 col-xs-12 pads">
-               <div class="thirdSpeech" style="text-align: right">
-                    Notre constat
-               </div>
-           </div>
-           
+<section style="background-color:#ff9274">
+    <div class="container">
+
+        <div class="col-lg-4 col-xs-12 pads speech">Pour être numéro 1, l’entreprise d’aujourd’hui doit attirer les
+            meilleurs.
         </div>
-    </section>
+        <div class="col-lg-4 col-xs-12 pads speech">De nos jours, la plupart d’entre eux sont indépendants.</div>
+        <div class="col-lg-4 col-xs-12 pads">
+            <div class="thirdSpeech" style="text-align: right">
+                Notre constat
+            </div>
+        </div>
 
-    <section>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h2 class="ourTeam">Notre équipe</h2>
+    </div>
+</section>
+
+<section>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 class="ourTeam">Notre équipe</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/valentincordier/">
+                        <img alt="Valentin" class="media-object dp img-circle" src="assets/images/teams/valentin.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Valentin</h3>
+                        <h4>Co-Founder<br>& COO</h4>
+                    </div>
                 </div>
             </div>
-            <div class="row">
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/valentincordier/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/valentin.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Valentin</h3>
-                            <h4>Co-Founder<br>& COO</h4>
-                        </div>
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/charlesthomasdata/">
+                        <img alt="Charles" class="media-object dp img-circle" src="assets/images/teams/charles.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Charles</h3>
+                        <h4>Co-Founder<br>& CEO</h4>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/charlesthomasdata/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/charles.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Charles</h3>
-                            <h4>Co-Founder<br>& CEO</h4>
-                        </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/joseph-wiel-86b91689/">
+                        <img alt="Joseph" class="media-object dp img-circle" src="assets/images/teams/joseph.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Joseph</h3>
+                        <h4>Co-Founder<br>& CPO</h4>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/joseph-wiel-86b91689/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/joseph.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Joseph</h3>
-                            <h4>Co-Founder<br>& CPO</h4>
-                        </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank"
+                       href="https://www.linkedin.com/in/albane-van-cappel-de-pr%C3%A9mont-86194897/">
+                        <img alt="Alabane" class="media-object dp img-circle" src="assets/images/teams/albane.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Albane</h3>
+                        <h4>Community</h4>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/albane-van-cappel-de-pr%C3%A9mont-86194897/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/albane.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Albane</h3>
-                            <h4>Community</h4>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/corentingrange/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/corentin.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Corentin</h3>
-                            <h4>Head of Care</h4>
-                        </div>
-                    </div>
-                </div>
+            </div>
 
-                <div class="col-lg-4">
-                    <div class="media">
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/corentingrange/">
+                        <img alt="Corentin" class="media-object dp img-circle" src="assets/images/teams/corentin.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Corentin</h3>
+                        <h4>Head of Care</h4>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="media">
                     <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/darwin-wu-35aab658/">
-                        <img class="media-object dp img-circle" src="assets/images/teams/darwin.png">
+                        <img alt="Darwin" class="media-object dp img-circle" src="assets/images/teams/darwin.png">
                     </a>
                     <div class="media-body">
                         <h3 class="media-heading">Darwin</h3>
                         <h4>Head of Growth</h4>
                     </div>
-                </div></div>
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/edern-lagadec-069b79a6/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/edern.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Edern</h3>
-                            <h4>Law</h4>
-                        </div>
+                </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/edern-lagadec-069b79a6/">
+                        <img alt="Edern" class="media-object dp img-circle" src="assets/images/teams/edern.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Edern</h3>
+                        <h4>Law</h4>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/h%C3%AAl%C3%AEn-imrek-303940127/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/helin.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Hêlîn</h3>
-                            <h4>Growth</h4>
-                        </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank"
+                       href="https://www.linkedin.com/in/h%C3%AAl%C3%AEn-imrek-303940127/">
+                        <img alt="Hêlîn" class="media-object dp img-circle" src="assets/images/teams/helin.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Hêlîn</h3>
+                        <h4>Growth</h4>
                     </div>
                 </div>
+            </div>
 
-                
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/profile/view/?id=AAkAABw2ikQBLTJ_JyeK4g8egRgTkh5QpaytlOM">
-                            <img class="media-object dp img-circle" src="assets/images/teams/mehdi.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Mehdi</h3>
-                            <h4>Ops Manager</h4>
-                        </div>
-                    </div>
-                </div>
-                
 
-                <div class="col-lg-12" style="padding-top:5rem; padding-bottom: 5rem;">
-                    <h2 class="ourTeam">Nos Advisors & Godfathers</h2>
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank"
+                       href="https://www.linkedin.com/profile/view/?id=AAkAABw2ikQBLTJ_JyeK4g8egRgTkh5QpaytlOM">
+                        <img alt="Mehdi" class="media-object dp img-circle" src="assets/images/teams/mehdi.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Mehdi</h3>
+                        <h4>Ops Manager</h4>
+                    </div>
                 </div>
+            </div>
 
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/samir-amellal-6486296/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/samir%20-%20publicis.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Samir Amellal</h3>
-                            <h4>CDO - Publicis</h4>
-                        </div>
+
+            <div class="col-lg-12" style="padding-top:5rem; padding-bottom: 5rem;">
+                <h2 class="ourTeam">Nos Advisors & Godfathers</h2>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/samir-amellal-6486296/">
+                        <img alt="Samir Amellal" class="media-object dp img-circle" src="assets/images/teams/samir%20-%20publicis.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Samir Amellal</h3>
+                        <h4>CDO - Publicis</h4>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/migueldefontenay/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/miguel%20-%20tf.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Miguel De Fontenay</h3>
-                            <h4>Partner - TheFamily</h4>
-                        </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/migueldefontenay/">
+                        <img alt="Miguel De Fontenay" class="media-object dp img-circle" src="assets/images/teams/miguel%20-%20tf.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Miguel De Fontenay</h3>
+                        <h4>Partner - TheFamily</h4>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="media">
-                        <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/axeldauchez/">
-                            <img class="media-object dp img-circle" src="assets/images/teams/axel%20-%20make.png">
-                        </a>
-                        <div class="media-body">
-                            <h3 class="media-heading">Axel Dauchez</h3>
-                            <h4>CEO - Make</h4>
-                        </div>
+            </div>
+            <div class="col-lg-4">
+                <div class="media">
+                    <a class="pull-left" target="_blank" href="https://www.linkedin.com/in/axeldauchez/">
+                        <img alt="Axel Dauchez" class="media-object dp img-circle" src="assets/images/teams/axel%20-%20make.png">
+                    </a>
+                    <div class="media-body">
+                        <h3 class="media-heading">Axel Dauchez</h3>
+                        <h4>CEO - Make</h4>
                     </div>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <!-- feedback Section -->
-    <section style="background-color:#5896ec">
-        <div class="container">
-            <div class="col-lg-12" id="salut" style="padding: 8rem 0rem;">
-                <div class="col-lg-7 col-xs-12">
-                    <p class="last-speech">
+<!-- feedback Section -->
+<section style="background-color:#5896ec">
+    <div class="container">
+        <div class="col-lg-12" id="salut" style="padding: 8rem 0rem;">
+            <div class="col-lg-7 col-xs-12">
+                <p class="last-speech">
                     Travailler pour les meilleurs pousse à nous dépasser à chaque instant.
                     Nous sommes déterminés à construire
                     un avenir souple et connecté, pour tous.
                     Si toi aussi, tu souhaites prendre part à l'aventure, rejoins-nous !
-                    </p>
-                </div>
-                <div class="col-lg-3 col-lg-offset-2 col-xs-12">
-                    <a target="_blank" href="https://skillee.welcomekit.co/">
+                </p>
+            </div>
+            <div class="col-lg-3 col-lg-offset-2 col-xs-12">
+                <a target="_blank" href="https://skillee.welcomekit.co/">
                     <button id="joinUs" class="btn col-xs-12 col-sm-12 col-lg-12 center">
                         <span class="center">
                             Rejoins-nous
-                            <img src="assets/images/left-arrow.png" alt="Rejoinds-nous" class="leftArrow">
+                            <img src="assets/images/left-arrow.png" alt="Rejoins-nous" class="leftArrow">
                         </span>
                     </button>
-                    </a>
-                </div>
+                </a>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5 col-md-push-4 col-xs-12" id='foot-links'>
-                    <ul class="list-inline quicklinks">
-                        <li><a style="color:inherit"  href="/about">À Propos</a></li>
-                        <li><a style="color:inherit"  href="/freelances">Freelances</a></li>
-                        <li><a style="color:inherit"  href="/entreprises">Entreprises</a></li>
-                        <li><a style="color:inherit" target="_blank" href="https://s3.eu-west-2.amazonaws.com/comet-assets/Comet_Mentions+L%C3%A9gales.pdf">Mentions Légales</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-3 col-md-push-4 col-xs-6">
-                    <ul class="list-inline social-buttons" id="foot-social">
-                        <li><a target="_blank" href="https://www.facebook.com/hellocomet/"><i class="fa fa-facebook"></i></a></li>
-                        <li><a target="_blank" href="https://twitter.com/_hellocomet"><i class="fa fa-twitter"></i></a></li>
-                        <li><a target="_blank" href="https://newsroom.hellocomet.co"><i class="fa fa-medium"></i></a></li>
-                    </ul>
-                </div>
-                <div class="col-md-2 col-xs-4 col-md-pull-9 col-xs-offset-2">
-                    <a href="#page-top">
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5 col-md-push-4 col-xs-12" id='foot-links'>
+                <ul class="list-inline quicklinks">
+                    <li><a style="color:inherit" href="/about">À Propos</a></li>
+                    <li><a style="color:inherit" href="/freelances">Freelances</a></li>
+                    <li><a style="color:inherit" href="/entreprises">Entreprises</a></li>
+                    <li><a style="color:inherit" target="_blank"
+                           href="https://s3.eu-west-2.amazonaws.com/comet-assets/Comet_Mentions+L%C3%A9gales.pdf">Mentions
+                        Légales</a></li>
+                </ul>
+            </div>
+            <div class="col-md-3 col-md-push-4 col-xs-6">
+                <ul class="list-inline social-buttons" id="foot-social">
+                    <li><a target="_blank" href="https://www.facebook.com/hellocomet/"><i
+                            class="fa fa-facebook"></i></a></li>
+                    <li><a target="_blank" href="https://twitter.com/_hellocomet"><i class="fa fa-twitter"></i></a></li>
+                    <li><a target="_blank" href="https://newsroom.hellocomet.co"><i class="fa fa-medium"></i></a></li>
+                </ul>
+            </div>
+            <div class="col-md-2 col-xs-4 col-md-pull-9 col-xs-offset-2">
+                <a href="#page-top">
                     <img src="assets/images/svg/logo.svg" alt="Comet" class="img-responsive">
-                    </a>
-                </div>
-                
+                </a>
             </div>
+
         </div>
-    </footer>
-    <script>
-        if (location.protocol !== 'https:')
-            location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
-    </script>
-    <!-- jQuery -->
-    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    </div>
+</footer>
+<script>
 
-    <!-- Bootstrap Core JavaScript -->
-    <script src="assets/js/bootstrap.js" type="text/javascript"></script>
+</script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
 
-    </body>
+<!-- Bootstrap Core JavaScript -->
+<script src="assets/js/bootstrap.js" type="text/javascript"></script>
+
+</body>
 </html>
