@@ -1,5 +1,7 @@
 RewriteEngine on
 
 RewriteCond %{HTTPS} off
-RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
+RewriteCond %{HTTP} on
+RewriteCond %{HTTPS_HOST} !^www.hellocomet.co$ [NC]
+RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [R=301,L]
 
