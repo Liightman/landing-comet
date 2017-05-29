@@ -106,6 +106,10 @@ body {
     z-index:49;
 }
 
+#foot-social {
+    display: block !important;
+}
+
 .padding {
     padding-top: 4rem;
 }

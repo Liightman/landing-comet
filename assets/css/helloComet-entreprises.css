@@ -154,6 +154,11 @@ body {
     padding: 8rem 0rem;
 }
 
+#foot-social {
+    display: block !important;
+}
+
+
 .padding {
     padding-top: 7rem;
 }
