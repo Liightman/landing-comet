@@ -56,7 +56,7 @@ $('#businessActionButton').click(function () {
             var e = document.createElement("script");
             e.type = "text/javascript";
             e.async = !0;
-            e.src = "analytics.js";
+            e.src = "assets/js/analytics.js";
             var n = document.getElementsByTagName("script")[0];
             n.parentNode.insertBefore(e, n)
         };
@@ -77,7 +77,7 @@ $('#businessActionButton').click(function () {
     r.async = 1;
     r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
     a.appendChild(r);
-})(window, document, '//static.hotjar.com/c/hotjar-', '.js?sv=');
+})(window, document, '/assets/js/hotjar.js', '.js?sv=');
 
 if (location.protocol !== 'https:')
     location.href = 'https:' + window.location.href.substring(window.location.protocol.length);
