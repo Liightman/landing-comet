@@ -11,6 +11,7 @@
 
             <link rel="icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png"
                   sizes="32x32">
+            <link rel="apple-touch-icon" sizes="144x144" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png" />
             <link rel="shortcut icon" type="image/x-icon" href="https://s3.eu-west-2.amazonaws.com/comet-assets/CO_yellow.png">
 
             <title>comet</title>

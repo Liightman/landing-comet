@@ -1,38 +1,32 @@
-if (window.screen.availHeight <= 824)
-{
-    if (navigator.userAgent.indexOf("Chrome")!== -1 || navigator.userAgent.indexOf("Safari")!== -1)
-    {   
-        $('#satellite').css('top',"-30rem");
+if (window.screen.availHeight <= 824) {
+    if (navigator.userAgent.indexOf("Chrome") !== -1 || navigator.userAgent.indexOf("Safari") !== -1) {
+        $('#satellite').css('top', "-30rem");
         $('#rocket').css('top', "-28rem");
         $('#dust').css('top', "-14rem")
     }
 
-    if (navigator.userAgent.indexOf("Firefox") !== -1)
-    {
+    if (navigator.userAgent.indexOf("Firefox") !== -1) {
         $('#satellite').css('margin-top', '-16.7%');
         $('#rocket').css('margin-top', '-16.7%');
     }
 }
 
-if (window.screen.availHeight <= 728)
-{
-    if (navigator.userAgent.indexOf("Chrome") !== -1)
-    {
+if (window.screen.availHeight <= 728) {
+    if (navigator.userAgent.indexOf("Chrome") !== -1) {
         $('.bottom').css('display', 'none');
     }
 
-    if (navigator.userAgent.indexOf("Firefox") !== -1)
-    {
+    if (navigator.userAgent.indexOf("Firefox") !== -1) {
         $('.bottom').css('display', 'none');
     }
 }
 
 $('#freelancesActionButton').click(function () {
-   window.location = '/freelances'
+    window.location = '/freelances'
 });
 
 $('#businessActionButton').click(function () {
-   window.location = '/entreprises'
+    window.location = '/entreprises'
 });
 
 !function () {
@@ -63,10 +57,9 @@ $('#businessActionButton').click(function () {
         analytics.SNIPPET_VERSION = "4.0.0";
         analytics.load("7iOqS9L3PoyGRj04HhCqfZfkR7ofjIFV");
         analytics.page({})
-        // { Intercom: { hideDefaultLauncher: true }}
     }
 }();
-//         Hotjar Tracking Code for http://www.hellocomet.co
+
 (function (h, o, t, j, a, r) {
     h.hj = h.hj || function () {
             (h.hj.q = h.hj.q || []).push(arguments)
