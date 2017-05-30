@@ -3,7 +3,7 @@
         <head>
             <meta charset="UTF-8">
 
-<!--            <meta name="description" content="Comet, une solution simple et transparente pour vous faciliter la vie."/>
+            <meta name="description" content="Comet, une solution simple et transparente pour vous faciliter la vie."/>
             <meta name="author" content="Llyam Garcia, Comet Yolo"/>
             <meta name="keywords" content="Comet"/>
             <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -15,13 +15,13 @@
 
             <title>comet</title>
             <!-- meta facebook -->
-<!--            <meta property="og:type" content="website"/>
+            <meta property="og:type" content="website"/>
             <meta property="og:title" content="comet - la nouvelle manière de travailler tech/data">
             <meta property="og:description"
                   content="comet connecte les meilleurs freelances tech/data avec les entreprises les plus innovantes."/>
             <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_thumbnail.png"/>
             <meta property="og:url" content="https://www.hellocomet.co"/
--->
+
             <link href="assets/css/comet.min.css" rel="stylesheet" type="text/css" />
         </head>
 
