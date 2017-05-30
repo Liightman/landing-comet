@@ -22,7 +22,7 @@
             <meta property="og:image" content="https://s3.eu-west-2.amazonaws.com/comet-assets/facebook_thumbnail.png"/>
             <meta property="og:url" content="https://www.hellocomet.co" />
 
-            <link href="assets/css/comet.min.css" rel="stylesheet" type="text/css"
+            <link href="assets/css/comet.min.css" rel="stylesheet" type="text/css">
             <style>
                 * { box-sizing: border-box; }
                 html { font-family: sans-serif; text-size-adjust: 100%; font-size: 10px; -webkit-tap-highlight-color: rgba(0, 0, 0, 0); height: 100%; }
