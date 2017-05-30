@@ -56,7 +56,7 @@ $('#businessActionButton').click(function () {
             var e = document.createElement("script");
             e.type = "text/javascript";
             e.async = !0;
-            e.src = ("https:" === document.location.protocol ? "https://" : "http://") + "cdn.segment.com/analytics.js/v1/" + t + "/analytics.min.js";
+            e.src = "analytics.js";
             var n = document.getElementsByTagName("script")[0];
             n.parentNode.insertBefore(e, n)
         };
