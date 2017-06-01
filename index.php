@@ -115,6 +115,7 @@
                     integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
                     crossorigin="anonymous"></script>
             <script defer src="assets/js/bootstrap.min.js" type="text/javascript"></script>
-            <script defer src="assets/js/index.js" type="text/javascript"></script>
+            <script defer src="assets/js/index.js" type="text/javascript"></script>]
+			<script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/3370273.js"></script>
         </body>
     </html>
