@@ -75,4 +75,4 @@ window.intercomSettings = {
     r.async = 1;
     r.src = t + h._hjSettings.hjid + j + h._hjSettings.hjsv;
     a.appendChild(r);
-})(window, document, '/assets/js/hotjar.js', '.js?sv=');
+})(window, document, '/assets/js/hotjar', '.js?sv=');
