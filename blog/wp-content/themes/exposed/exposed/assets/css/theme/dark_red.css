@@ -1,0 +1,147 @@
+a:hover {
+	color: #c94357 ;
+}
+.btn {
+	background: #c94357 ;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(201, 67, 87, 0.5);
+	   -moz-box-shadow: 1px 1px 1px 1px rgba(201, 67, 87, 0.5);
+	        box-shadow: 1px 1px 1px 1px rgba(201, 67, 87, 0.5);
+}
+.btn:hover {
+	background: rgba(201, 67, 87, 0.4);
+}
+.heading h2 {
+	color: #c94357 ;
+}
+.separator {
+	color: #c94357 ;
+}
+.counter h2,
+.reserve-room h2 {
+	color: #fff;
+}
+.color-overlay {
+    background: rgba(250, 75, 116, 0.4) none repeat scroll 0 0;
+}
+.logo a {
+	background: #c94357 ;
+}
+.logo a:hover {
+	color: #fff;
+}
+.navbar-nav ul li.active a::after,
+.navbar-nav ul li a:hover::after {
+	background: #c94357 ;
+}
+.navbar-nav ul li.active > a,
+.navbar-nav ul li a:hover {
+	color: #c94357 ;
+}
+.banner-style .banner-heading span:before,
+.banner-style .banner-heading span:after {
+	background: #c94357 ;
+}
+.banner-style .banner-heading .fa {
+	color: #c94357 ;
+}
+.happy-couple-style-1 .couple-name .fa {
+	color: #c94357 ;
+}
+.love-history-style-1 .yearly-history .nav-tabs > li.active > a, 
+.love-history-style-1 .yearly-history .nav-tabs > li.active > a:focus, 
+.love-history-style-1 .yearly-history .nav-tabs > li.active > a:hover {
+	background: #c94357 ;
+}
+.love-history-style-1 .loving-year h5 {
+	color: #c94357 ;
+}
+.love-history-style-1 .tab-separator span .fa {
+	color: #c94357 ;
+}
+.love-history-style-1 .tab-separator span:before,
+.love-history-style-1 .tab-separator span:after {
+	background: #c94357 ;
+}
+.reception h4, 
+.ceremony h4 {
+	color: #c94357 ;
+}
+.people-style-1 .important-people .nav-tabs > li.active > a, 
+.people-style-1 .important-people .nav-tabs > li.active > a:focus, 
+.people-style-1 .important-people .nav-tabs > li.active > a:hover {
+	background: #c94357 ;
+}
+.people-style-1 .people-introduction h6 {
+	color: #c94357 ;
+}
+.people-style-1 .people-introduction h6 span  {
+	color: #a1a09f;
+}
+.accommodation-single .accommodation-content {
+	background: #c94357 ;
+}
+.widget .widget-title {
+	color: #c94357 ;
+}
+.post-body .read-more:hover,
+.post-body .post-title a:hover {
+	color: #c94357 ;
+}
+.post-body .video a {
+	color: #c94357 ;
+}
+.pagination a.active,
+.pagination a:hover {
+	background: #c94357 ;
+}
+.share-post .fa {
+	border-color: #c94357 ;
+	color: #c94357 ;
+}
+.share-post .fa:hover {
+	background: #c94357 ;
+}
+.registry-style-1 .gift-icon:hover {
+	background: #c94357 ;
+}
+.sureornot input[type=radio]:checked + label {
+	background: #c94357 ;
+}
+.contact-form input#attend, .reply input[type="submit"] {
+	background: #c94357 ;
+}
+.contact-form input[type='text']:focus, .contact-form input[type='email']:focus {
+	border-color: #c94357;
+}
+.contact-form input#attend:hover,
+.reply .submit-effect:hover input[type='submit'] {
+	background: rgba(201, 67, 87, 0.7);
+}
+.footer-widget h5 {
+	color: #c94357 ;
+}
+.footer-widget li .fa {
+	color: #c94357 ;
+}
+#go-to-top .fa:hover {
+	border: 2px solid #c94357 ;
+	color: #c94357 ;
+}
+
+.menu-trigger-scroll .icon,
+.menu-trigger-scroll .icon:after, 
+.menu-trigger-scroll .icon:before {
+	border-color: #c94357;
+}
+.main-mav>li>a:hover,
+.main-mav .has-sub-menu.mobile .sub-trigger:hover,
+.main-mav .has-sub-menu>.sub-menu>li>a:hover {
+	background: #c94357;
+}
+.sidenav-social-icon a {
+	background: #c94357;
+}
+.sidenav-social-icon a:hover {
+	color: #fff;
+	background: rgba(201, 67, 87, 0.6);
+}

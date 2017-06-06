@@ -1,0 +1,40 @@
+a:hover {
+	color: #ed1280;
+}
+.btn {
+	background: #ed1280;
+	-webkit-box-shadow: 1px 1px 1px 1px rgba(237, 18, 128, 0.5);
+	   -moz-box-shadow: 1px 1px 1px 1px rgba(237, 18, 128, 0.5);
+	        box-shadow: 1px 1px 1px 1px rgba(237, 18, 128, 0.5);
+}
+.btn:hover {
+	background: rgba(237, 18, 128, 0.5);
+}
+.menu-trigger .icon {
+    border: 2px solid #ed1280;
+    background: #ed1280;
+}
+#style-switcher .bottom a.settings {
+    background: none repeat scroll 0 0 #ed1280;
+}
+.navbar-default .collapse .navbar-nav > li:hover > a {
+    border-top: 5px solid #ed1280;
+}
+.navbar-default .collapse .navbar-nav > li.active > a {
+    border-top: 5px solid #ed1280;
+}
+.yellow-bg {
+    background: #ed1280;
+}
+.yellow {
+    color: #ed1280;
+}
+.bar-left:before {
+    background: #ed1280;
+}
+.busi-pos {
+    background: #ed1280;
+}
+.sidenav-social-icon a {
+    background: #ed1280;
+}
